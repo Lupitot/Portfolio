@@ -1,0 +1,59 @@
+{
+    "blog" : {
+        "Integration Chez Oniti": {
+            "id": "1",
+            "image": "../assets/images/imageBlog/integrationBlog.png",
+            "titre": "Integration chez Oniti",
+            "altImage" : "Photo barbecue de l'equipe Oniti",
+            "contenu": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl"
+        },
+        "NomDuPost2": {
+            "id": "2",
+            "image": "image.jpg",
+            "titre": "Titre du post2",
+            "contenu": "Contenu du post2"
+        },
+        "NomDuPost3": {
+            "id": "3",
+            "image": "image.jpg",
+            "titre": "Titre du post3",
+            "contenu": "Contenu du post3"
+        },
+        "NomDuPost4": {
+            "id": "4",
+            "image": "image.jpg",
+            "titre": "Titre du post",
+            "contenu": "Contenu du post"
+        },
+        "NomDuPost5": {
+            "id": "5",
+            "image": "image.jpg",
+            "titre": "Titre du post",
+            "contenu": "Contenu du post"
+        },
+        "NomDuPost6": {
+            "id": "6",
+            "image": "image.jpg",
+            "titre": "Titre du post",
+            "contenu": "Contenu du post"
+        },
+        "NomDuPost7": {
+            "id": "7",
+            "image": "image.jpg",
+            "titre": "Titre du post",
+            "contenu": "Contenu du post"
+        },
+        "NomDuPost8": {
+            "id": "8",
+            "image": "image.jpg",
+            "titre": "Titre du post",
+            "contenu": "Contenu du post"
+        },
+        "NomDuPost9": {
+            "id": "9",
+            "image": "image.jpg",
+            "titre": "Titre du post",
+            "contenu": "Contenu du post"
+        }
+    }
+}

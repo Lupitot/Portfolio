@@ -1,0 +1,47 @@
+:root {
+  --var-color1: #0A1931;
+  --var-color2: #185ADB;
+  --var-color3: #FFC947;
+  --var-color4: #EFEFEF;
+
+  --var-decline-color2: #1a49a7;
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  src: url(./font/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: 'Lilita One';
+
+  src: url(./font/LilitaOne-Regular.ttf);
+}
+
+
+
+
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  background-color: var(--var-color1);
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--var-color2);
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--var-decline-color2);
+}
