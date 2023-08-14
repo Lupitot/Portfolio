@@ -3,8 +3,8 @@
         <section id="content" class="content">
             <ul class="ulmenu">
                 <li><a href="/portfolio/index.html">Home</a></li>
-                <li> <a href="/portfolio/src/page/blog.html">Blog</a></li>
-                <li>Projets</li>
+                <li><a href="/portfolio/src/page/blog.html">Blog</a></li>
+                <li><a href="/portfolio/src/page/projet.html">Projets</a></li>
                 <li>Entreprises</li>
                 <li><a href="/portfolio/src/page/contact.html">Contact</a></li>
             </ul>
@@ -89,9 +89,10 @@ const menuOpen = ref(false);
 .ulmenu li a {
     text-decoration: none;
     color: #EFEFEF;
+    transition: color 0.5s ease-in-out;
 }
 
-.ulmenu li a:hover {
+.ulmenu li:hover a {
     color: #0A1931;
     transition: color 1s ease-in-out;
 }
