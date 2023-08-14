@@ -15,6 +15,8 @@ export default defineConfig({
     }
   }, 
   base: '/portfolio/',
+  // import des images
+
   build: {
     rollupOptions: {
       input: {
