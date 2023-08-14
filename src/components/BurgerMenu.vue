@@ -3,10 +3,10 @@
         <section id="content" class="content">
             <ul class="ulmenu">
                 <li><a href="../../index.html">Home</a></li>
-                <li> <a href="../../src/page/blog.html">Blog</a></li>
+                <li> <a href="/portfolio/src/page/blog.html">Blog</a></li>
                 <li>Projets</li>
                 <li>Entreprises</li>
-                <li><a href="../../src/page/contact.html">Contact</a></li>
+                <li><a href="portfolio/src/page/contact.html">Contact</a></li>
             </ul>
         </section>
     </div>
