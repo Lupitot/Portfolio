@@ -1,0 +1,36 @@
+{
+
+    "entreprises" : {
+
+        "entreprises1" : {
+            "nom" : "entreprise1",
+            "logo" : "logo1",
+            "altLogo" : "altLogo1",
+            "description" : "description1",
+            "lien" : "lien1"
+        },
+        "entreprises2" : {
+            "nom" : "entreprise2",
+            "logo" : "logo2",
+            "altLogo" : "altLogo2",
+            "description" : "description2",
+            "lien" : "lien2"
+        },
+        "entreprises3" : {
+            "nom" : "entreprise3",
+            "logo" : "logo3",
+            "altLogo" : "altLogo3",
+            "description" : "description3",
+            "lien" : "lien3"
+        },
+        "entreprises4" : {
+            "nom" : "entreprise4",
+            "logo" : "logo4",
+            "altLogo" : "altLogo4",
+            "description" : "description4",
+            "lien" : "lien4"
+        }
+    }
+
+
+}
