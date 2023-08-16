@@ -43,7 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: ease-in 1s;
+    transition: ease-in 0.8s;
     overflow: hidden;
     background-color: var(--var-color1);
     border-radius: 10px;
@@ -77,7 +77,7 @@
     font-size: 5.7vw;
     font-weight: 300;
     font-family: 'Lilita One', cursive;
-    transition: ease-in 1s;
+    transition: ease-in 0.8s;
 }
 
 .boxContact:hover {
@@ -85,17 +85,17 @@
     max-width: 50vw;
     background-color: var(--var-color3);
     color: var(--var-color1);
-    transition: ease 1s;
+    transition: ease 0.8s;
 }
 
 .boxContact:hover a {
     color: var(--var-color1);
-    transition: ease-in 1s;
+    transition: ease-in 0.8s;
 }
 
 .boxContact:hover p {
     rotate: 0deg;
-    transition: ease-in 1s;
+    transition: ease-in 0.8s;
 }
 
 @keyframes apparitionBoxContact {

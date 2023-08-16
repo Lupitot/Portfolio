@@ -29,9 +29,11 @@ import ListPostBlog from "./components/ListPostBlog.vue";
 }
 
 .contentBlog h1 {
+    margin-top: 1.5rem;
     font-size: 5vw;
     color: var(--var-color4);
     font-family: "Lilita One", cursive;
+    margin-bottom: -1.5rem;
 
 }
 
