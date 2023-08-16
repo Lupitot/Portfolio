@@ -193,7 +193,7 @@ import Footer from "./components/Footer.vue";
   flex-direction: column;
 
   @include respond(phone) {
-    height: 150vh;
+    height: 160vh;
 
   }
 }
@@ -233,6 +233,11 @@ import Footer from "./components/Footer.vue";
   justify-content: center;
   flex-direction: column;
   gap: 5vw;
+
+  @include respond(phone) {
+    height: 120vh;
+    gap: 10vw;
+  }
 }
 
 .Skills h3 {

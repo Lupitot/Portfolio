@@ -142,7 +142,12 @@ export default {
 };
 </script>
   
-<style scoped>
+<style lang="scss" scoped>
+
+@import "../assets/responsive.scss";
+
+
+
 .contentSkillsSelector {
     width: 85%;
     display: flex;
@@ -150,6 +155,12 @@ export default {
     justify-content: center;
     flex-direction: column;
     gap: 3vw;
+
+    @include respond(phone) {
+        justify-content: space-between;
+        height: 190vw;
+    }
+    
 }
 
 .contentButton {
@@ -167,6 +178,10 @@ export default {
     color: var(--var-color4);
     font-family: "Lilita one", cursive;
     font-size: 2.2vw;
+
+    @include respond(phone) {
+        font-size: 4vw;
+    }
 }
 
 .tab-button::after {
@@ -176,6 +191,10 @@ export default {
     height: 6px;
     background: var(--var-color3);
     transition: width 0.3s;
+
+    @include respond(phone) {
+        height: 3px;
+    }
 }
 
 .tab-button:hover::after {
@@ -195,6 +214,11 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include respond(phone) {
+        height: 175vw;
+    }
+
 }
 
 .icon {
@@ -202,6 +226,11 @@ export default {
     width: 10vw;
     height: 10vw;
     transition: color 0.3s ease-in-out;
+
+    @include respond(phone) {
+        width: 20vw;
+        height: 20vw;
+    }
 }
 
 .icon:hover {
@@ -228,6 +257,17 @@ export default {
     gap: 6vw;
     column-gap: 15vw;
     list-style-type: none;
+
+    @include respond(phone) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "html css"
+            "js sql"
+            "vue php"
+            "python java"
+            "cSharp .";
+    }
 }
 
 .ulHardSkills li {
@@ -235,6 +275,10 @@ export default {
     font-family: "Poppins", cursive; 
     font-size: 1.5vw;
     color: var(--var-color4);
+
+    @include respond(phone) {
+        font-size: 1rem;
+    }
 }
 
 .html {
@@ -290,6 +334,15 @@ export default {
     gap: 6vw;
     column-gap: 15vw;
     list-style-type: none;
+
+    @include respond(phone) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "adaptabilite polyvalence"
+            "creatif curieux"
+            "gestionDeProjet .";
+    }
 }
 
 
@@ -298,6 +351,10 @@ export default {
     font-family: "Poppins", cursive; 
     font-size: 1.5vw;
     color: var(--var-color4);
+
+    @include respond(phone) {
+        font-size: 1rem;
+    }
 }
 
 
@@ -340,6 +397,11 @@ export default {
     gap: 6vw;
     column-gap: 15vw;
     list-style-type: none;
+
+    @include respond(phone) {
+        margin-top: -10rem;
+        height: 50%;
+    }
 }
 
 
@@ -348,6 +410,10 @@ export default {
     font-family: "Poppins", cursive; 
     font-size: 1.5vw;
     color: var(--var-color4);
+
+    @include respond(phone) {
+        font-size: 1rem;
+    }
 }
 
 .vsCode {

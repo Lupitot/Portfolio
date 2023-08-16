@@ -72,7 +72,7 @@
 
     @include respond(phone) {
         width: 80vw;
-        height: 50vw;
+        height: 60vw;
         transform: translateX(0%);
         border-radius: 5vw 5vw;
     }
