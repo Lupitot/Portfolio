@@ -113,9 +113,22 @@ import Footer from "./components/Footer.vue";
 
   @include respond(phone) {
     font-size: 4.5vw;
-    width: 120%;
+    width: 100%;
   }
 
+}
+
+.TextContent {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+
+  @include respond(phone) {
+    width: 70%;
+  }
 }
 
 
@@ -166,19 +179,11 @@ import Footer from "./components/Footer.vue";
 
 
 
-.TextContent {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3vw;
-}
+
 
 /* style partie parcours */
 
 .Parcours {
-  /* margin-top: -15vw; */
   height: 250vh;
   width: 100%;
   background-color: var(--var-color3);
@@ -186,6 +191,11 @@ import Footer from "./components/Footer.vue";
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+
+  @include respond(phone) {
+    height: 150vh;
+
+  }
 }
 
 .ContentSectionParcours {
@@ -200,6 +210,8 @@ import Footer from "./components/Footer.vue";
   color: var(--var-color1);
   font-family: "Lilita One", cursive;
   transform: translateY(450%);
+
+  
 }
 
 
