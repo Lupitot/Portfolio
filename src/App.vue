@@ -64,6 +64,10 @@ import Footer from "./components/Footer.vue";
   align-items: center;
   justify-content: space-between;
 
+  @include respond(phone) {
+    height: 90vh;
+  }
+
 }
 
 .PresentationContent {
@@ -77,7 +81,7 @@ import Footer from "./components/Footer.vue";
 
   @include respond(phone) {
     flex-direction: column;
-    gap: 10vw;
+    justify-content: space-around;
   }
 }
 
@@ -108,8 +112,8 @@ import Footer from "./components/Footer.vue";
   animation: apparitionText 1s ease-in-out;
 
   @include respond(phone) {
-    font-size: 4vw;
-    width: 100%;
+    font-size: 4.5vw;
+    width: 120%;
   }
 
 }
