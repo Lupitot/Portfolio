@@ -108,8 +108,8 @@ import Footer from "./components/Footer.vue";
   animation: apparitionText 1s ease-in-out;
 
   @include respond(phone) {
-    font-size: 5vw;
-    width: 90%;
+    font-size: 4vw;
+    width: 100%;
   }
 
 }
