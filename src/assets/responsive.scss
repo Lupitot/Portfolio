@@ -1,5 +1,13 @@
 @mixin respond($breakpoint){
+
+
     @if $breakpoint == phone {
+        @media only screen and (max-width: 20.3125em) { @content }; // 325px
+    }
+    @if $breakpoint == phone-moyen {
+        @media only screen and (max-width: 25em) { @content }; // 400px
+    }
+    @if $breakpoint == phone-big {
         @media only screen and (max-width: 37.5em) { @content }; // 600px
     }
     @if $breakpoint == tab-port {
@@ -12,3 +20,5 @@
         @media only screen and (min-width: 112.5em) { @content }; // 1800px
     }
 }
+
+//600 

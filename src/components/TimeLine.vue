@@ -37,7 +37,7 @@
     gap: 20px;
     transform: translateY(45%);
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         transform: translateY(14%);
     }
 }
@@ -50,7 +50,7 @@
     width: 0.7vw;
     background-color: var(--var-color1);
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         display: none;
     }
     
@@ -68,14 +68,21 @@
     align-items: center;
     justify-content: space-between;
     transform: translateX(70%);
-    box-shadow: 0.7vw 0.7vw 0px 0px var(--var-color2);
-
-    @include respond(phone) {
+    box-shadow: 0.7vw 0.7vw 0px 0px var(--var-color2); 
+    
+    @include respond(phone-big) {
         width: 80vw;
-        height: 60vw;
+        height: 50vw;
         transform: translateX(0%);
         border-radius: 5vw 5vw;
     }
+
+    @include respond(phone) {
+        height: 60vw;
+
+    }
+
+
 
 }
 
@@ -83,10 +90,12 @@
     transform: translateX(-70%);
     border-radius: 5vw 0px;
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         transform: translateX(0%);
         border-radius: 5vw 5vw;
     }
+
+
 
 
 }
@@ -108,7 +117,7 @@
     box-sizing:border-box;
 	transform: translate(50%,-50%);
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         display: none;
     }
 }

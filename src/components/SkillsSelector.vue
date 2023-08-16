@@ -156,7 +156,7 @@ export default {
     flex-direction: column;
     gap: 3vw;
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         justify-content: space-between;
         height: 190vw;
     }
@@ -179,7 +179,7 @@ export default {
     font-family: "Lilita one", cursive;
     font-size: 2.2vw;
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         font-size: 4vw;
     }
 }
@@ -192,7 +192,7 @@ export default {
     background: var(--var-color3);
     transition: width 0.3s;
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         height: 3px;
     }
 }
@@ -215,7 +215,7 @@ export default {
     align-items: center;
     justify-content: center;
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         height: 175vw;
     }
 
@@ -226,6 +226,16 @@ export default {
     width: 10vw;
     height: 10vw;
     transition: color 0.3s ease-in-out;
+
+    @include respond(phone-big) {
+        width: 25vw;
+        height: 25vw;
+    }
+    
+    @include respond(phone-moyen) {
+        width: 22vw;
+        height: 22vw;
+    }
 
     @include respond(phone) {
         width: 20vw;
@@ -258,7 +268,7 @@ export default {
     column-gap: 15vw;
     list-style-type: none;
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
         grid-template-areas:
@@ -276,7 +286,7 @@ export default {
     font-size: 1.5vw;
     color: var(--var-color4);
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         font-size: 1rem;
     }
 }
@@ -335,7 +345,7 @@ export default {
     column-gap: 15vw;
     list-style-type: none;
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
@@ -352,7 +362,7 @@ export default {
     font-size: 1.5vw;
     color: var(--var-color4);
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         font-size: 1rem;
     }
 }
@@ -398,7 +408,7 @@ export default {
     column-gap: 15vw;
     list-style-type: none;
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         margin-top: -10rem;
         height: 50%;
     }
@@ -411,7 +421,7 @@ export default {
     font-size: 1.5vw;
     color: var(--var-color4);
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         font-size: 1rem;
     }
 }

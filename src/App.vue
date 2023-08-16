@@ -64,8 +64,17 @@ import Footer from "./components/Footer.vue";
   align-items: center;
   justify-content: space-between;
 
-  @include respond(phone) {
+  
+  @include respond(phone-big) {
     height: 90vh;
+  }
+
+  @include respond(phone-moyen) {
+    height: 80vh;
+  }
+
+  @include respond(phone) {
+    height: 70vh;
   }
 
 }
@@ -79,7 +88,8 @@ import Footer from "./components/Footer.vue";
   gap: 2vw;
   background-color: var(--var-color1);
 
-  @include respond(phone) {
+
+  @include respond(phone-big) {
     flex-direction: column;
     justify-content: space-around;
   }
@@ -95,11 +105,22 @@ import Footer from "./components/Footer.vue";
   font-size: 5vw;
   color: var(--var-color4);
   font-family: "Lilita One", cursive;
-  animation: apparitionTitle 1s ease-in-out;
+  animation: apparitionTitle 1s ease-in-out; 
+  
+  
+  @include respond(phone-big) {
+    font-size: 8vw;
+  }
+
+  @include respond(phone-moyen) {
+    font-size: 9vw;
+  }
 
   @include respond(phone) {
     font-size: 10vw;
   }
+
+
 }
 
 .PresentationText {
@@ -111,9 +132,19 @@ import Footer from "./components/Footer.vue";
   text-justify: inter-word;
   animation: apparitionText 1s ease-in-out;
 
+
+
+  @include respond(phone-big) {
+    font-size: 3vw;
+    width: 100%;
+  } 
+
+  @include respond(phone-moyen) {
+    font-size: 4vw;
+  }
+  
   @include respond(phone) {
     font-size: 4.5vw;
-    width: 100%;
   }
 
 }
@@ -126,19 +157,32 @@ import Footer from "./components/Footer.vue";
   justify-content: center;
   gap: 3vw;
 
-  @include respond(phone) {
+  @include respond(phone-big) {
     width: 70%;
   }
 }
 
 
+
 .glowCircle {
   animation: apparitionPicture 1s ease-in-out;
+  
+  @include respond(phone-big) {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  @include respond(phone-moyen) {
+    width: 55vw;
+    height: 55vw;
+  }
 
   @include respond(phone) {
-    width: 50vw;
-    height: 50vw;
+    width: 55vw;
+    height: 55vw;
   }
+
+
 }
 
 @keyframes apparitionText {
@@ -192,9 +236,18 @@ import Footer from "./components/Footer.vue";
   justify-content: space-between;
   flex-direction: column;
 
+
+
+  @include respond(phone-big) {
+    height: 215vh;
+  }
+
+  @include respond(phone-moyen) {
+    height: 160vh;
+  }
+
   @include respond(phone) {
     height: 150vh;
-
   }
 }
 
@@ -233,6 +286,16 @@ import Footer from "./components/Footer.vue";
   justify-content: center;
   flex-direction: column;
   gap: 5vw;
+
+
+  @include respond(phone-big) {
+    height: 200vh;
+  }
+
+  @include respond(phone-moyen) {
+    height: 150vh;
+  }
+
 
   @include respond(phone) {
     height: 122vh;
