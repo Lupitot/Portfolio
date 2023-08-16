@@ -23,6 +23,8 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         contact: resolve(__dirname, 'src/page/contact.html'),
         blog: resolve(__dirname, 'src/page/blog.html'),
+        projet: resolve(__dirname, 'src/page/projet.html'),
+        entreprises: resolve(__dirname, 'src/page/entreprises.html'),
       }
     }
   }
