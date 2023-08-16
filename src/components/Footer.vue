@@ -35,9 +35,15 @@
     color: var(--var-color1);
     font-family: 'Poppins', cursive;
 
+
+    @include respond(phone-big) {
+        height: 15vh;
+        text-align: center;
+    }
+
     @include respond(phone) {
         height: 20vh;
-        text-align: center;
+        
         gap: 7vw;
     }
 }
@@ -57,6 +63,16 @@
     cursor: pointer;
     z-index: 1;
     overflow: hidden;
+
+    @include respond(phone-big) {
+        width: 20vw;
+        height: 5vw;
+    }
+
+    @include respond(phone-moyen) {
+        width: 23vw;
+        height: 7vw;
+    }
 
     @include respond(phone) {
         width: 25vw;
@@ -101,6 +117,11 @@
     z-index: 1;
     position: relative;
     transition: 0.5s;
+
+    @include respond(phone-big) {
+        font-size: 3vw;
+    }
+
 
     @include respond(phone) {
         font-size: 4vw;

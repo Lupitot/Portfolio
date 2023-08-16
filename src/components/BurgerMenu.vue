@@ -69,6 +69,14 @@ const menuOpen = ref(false);
     text-align: center;
     transition: color 1s ease-in-out;
 
+
+    @include respond(phone-big) {
+        font-size: 5vw;
+        width: 33vw;
+        height: 7vw;
+        font-weight: 600;
+    }
+
     @include respond(phone) {
         font-size: 6vw;
         font-weight: 600;
@@ -88,6 +96,11 @@ const menuOpen = ref(false);
     border-radius: 30px;
     transition: 0.5s;
     right: 100%;
+
+
+    @include respond(phone-big) {
+        height: 7vw;
+    }
 
     @include respond(phone) {
         height: 8vw;
@@ -170,6 +183,19 @@ input[type="checkbox"]:checked~.content {
     z-index: 31;
     opacity: 0;
     cursor: pointer;
+
+
+    @include respond(phone-big) {
+        right: 20px;
+        top: 20px;
+        height: 40px;
+        width: 40px;
+    }
+
+    @include respond(phone-moyen) {
+        right: 15px;
+        top: 15px;
+    }
 
     @include respond(phone) {
         right: 15px;
