@@ -18,7 +18,11 @@
 <script setup>
 </script>
 
-<style lang="css">
+<style lang="scss">
+
+@import "../assets/responsive.scss";
+
+
 .ContentFooter {
     display: flex;
     flex-direction: column;
@@ -30,6 +34,12 @@
     background-color: var(--var-color3);
     color: var(--var-color1);
     font-family: 'Poppins', cursive;
+
+    @include respond(phone) {
+        height: 20vh;
+        text-align: center;
+        gap: 7vw;
+    }
 }
 
 
@@ -47,6 +57,11 @@
     cursor: pointer;
     z-index: 1;
     overflow: hidden;
+
+    @include respond(phone) {
+        width: 25vw;
+        height: 8vw;
+    }
 }
 
   
@@ -86,6 +101,10 @@
     z-index: 1;
     position: relative;
     transition: 0.5s;
+
+    @include respond(phone) {
+        font-size: 4vw;
+    }
 
 }
 
