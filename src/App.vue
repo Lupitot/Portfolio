@@ -193,7 +193,7 @@ import Footer from "./components/Footer.vue";
   flex-direction: column;
 
   @include respond(phone) {
-    height: 160vh;
+    height: 150vh;
 
   }
 }
@@ -235,7 +235,7 @@ import Footer from "./components/Footer.vue";
   gap: 5vw;
 
   @include respond(phone) {
-    height: 120vh;
+    height: 122vh;
     gap: 10vw;
   }
 }

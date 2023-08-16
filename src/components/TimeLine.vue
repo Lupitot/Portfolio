@@ -38,7 +38,7 @@
     transform: translateY(45%);
 
     @include respond(phone) {
-        transform: translateY(20%);
+        transform: translateY(14%);
     }
 }
 

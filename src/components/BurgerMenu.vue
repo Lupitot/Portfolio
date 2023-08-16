@@ -24,7 +24,10 @@ import { ref } from 'vue';
 const menuOpen = ref(false);
 </script>
 
-<style lang="css">
+<style lang="scss">
+
+@import  "../assets/responsive.scss";
+
 .menu {
     position: fixed;
     top: 0;
@@ -55,7 +58,7 @@ const menuOpen = ref(false);
     font-size: 2vw;
     width: 12vw;
     z-index: 1;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Poppins", sans-serif;
     position: relative;
     height: 3vw;
     cursor: pointer;
@@ -65,6 +68,14 @@ const menuOpen = ref(false);
     justify-content: center;
     text-align: center;
     transition: color 1s ease-in-out;
+
+    @include respond(phone) {
+        font-size: 6vw;
+        font-weight: 600;
+        width: 40vw;
+        height: 8vw;
+    }
+
 }
 
 .ulmenu li::before {
@@ -77,6 +88,10 @@ const menuOpen = ref(false);
     border-radius: 30px;
     transition: 0.5s;
     right: 100%;
+
+    @include respond(phone) {
+        height: 8vw;
+    }
 }
 
 .ulmenu li:hover::before {
@@ -155,6 +170,14 @@ input[type="checkbox"]:checked~.content {
     z-index: 31;
     opacity: 0;
     cursor: pointer;
+
+    @include respond(phone) {
+        right: 15px;
+        top: 15px;
+        height: 45px;
+        width: 45px;
+    }
+
 }
 
 .burger {
