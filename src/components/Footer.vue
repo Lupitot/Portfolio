@@ -2,10 +2,10 @@
     <div class="ContentFooter">
         <span class="LinkRedirection">
             <div class="buttonWithLink">
-                <a href="../../src/page/contact.html">Contact</a>
+                <a href="/portfolio/src/page/contact.html">Contact</a>
             </div>
             <div class="buttonWithLink">
-                <a href="../../index.html">Home</a>
+                <a href="/portfolio/index.html">Home</a>
             </div>
         </span>
         <span class="Droit">
