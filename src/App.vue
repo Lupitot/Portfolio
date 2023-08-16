@@ -64,11 +64,6 @@ import Footer from "./components/Footer.vue";
   align-items: center;
   justify-content: space-between;
 
-  @include respond(phone) {
-    height: 80vh;
-
-  }
-
 }
 
 .PresentationContent {
