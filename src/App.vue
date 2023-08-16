@@ -49,8 +49,9 @@ import Footer from "./components/Footer.vue";
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
 
+@import "./assets/responsive.scss";
 
 
 
@@ -62,6 +63,12 @@ import Footer from "./components/Footer.vue";
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include respond(phone) {
+    height: 80vh;
+
+  }
+
 }
 
 .PresentationContent {
@@ -72,6 +79,11 @@ import Footer from "./components/Footer.vue";
   justify-content: center;
   gap: 2vw;
   background-color: var(--var-color1);
+
+  @include respond(phone) {
+    flex-direction: column;
+    gap: 10vw;
+  }
 }
 
 .BottomSectionPresentation {
@@ -85,6 +97,10 @@ import Footer from "./components/Footer.vue";
   color: var(--var-color4);
   font-family: "Lilita One", cursive;
   animation: apparitionTitle 1s ease-in-out;
+
+  @include respond(phone) {
+    font-size: 10vw;
+  }
 }
 
 .PresentationText {
@@ -96,10 +112,21 @@ import Footer from "./components/Footer.vue";
   text-justify: inter-word;
   animation: apparitionText 1s ease-in-out;
 
+  @include respond(phone) {
+    font-size: 5vw;
+    width: 90%;
+  }
+
 }
+
 
 .glowCircle {
   animation: apparitionPicture 1s ease-in-out;
+
+  @include respond(phone) {
+    width: 50vw;
+    height: 50vw;
+  }
 }
 
 @keyframes apparitionText {
