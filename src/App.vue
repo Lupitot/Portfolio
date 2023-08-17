@@ -69,6 +69,9 @@ import Footer from "./components/Footer.vue";
     height: 75vh;
   }
 
+  @include respond(tab-700) {
+    height: 85vh;
+  }
 
   @include respond(phone-big) {
     height: 90vh;
@@ -93,6 +96,11 @@ import Footer from "./components/Footer.vue";
   gap: 2vw;
   background-color: var(--var-color1);
 
+  @include respond(tab-700) {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
 
   @include respond(phone-big) {
     flex-direction: column;
@@ -111,7 +119,11 @@ import Footer from "./components/Footer.vue";
   color: var(--var-color4);
   font-family: "Lilita One", cursive;
   animation: apparitionTitle 1s ease-in-out; 
+
   
+  @include respond(tab-700) {
+    font-size: 6vw;
+  }
   
   @include respond(phone-big) {
     font-size: 8vw;
@@ -138,6 +150,11 @@ import Footer from "./components/Footer.vue";
   animation: apparitionText 1s ease-in-out;
 
 
+  @include respond(tab-700) {
+    font-size: 2.5vw;
+    width: 80%;
+  }
+
 
   @include respond(phone-big) {
     font-size: 3vw;
@@ -162,6 +179,10 @@ import Footer from "./components/Footer.vue";
   justify-content: center;
   gap: 3vw;
 
+  @include respond(tab-700) {
+    width: 80%;
+  }
+
   @include respond(phone-big) {
     width: 70%;
   }
@@ -171,6 +192,12 @@ import Footer from "./components/Footer.vue";
 
 .glowCircle {
   animation: apparitionPicture 1s ease-in-out;
+
+
+  @include respond(tab-700) {
+    width: 40vw;
+    height: 40vw;
+  }
   
   @include respond(phone-big) {
     width: 40vw;
@@ -245,6 +272,10 @@ import Footer from "./components/Footer.vue";
     height: 150vh;
   }
 
+  @include respond(tab-700) {
+    height: 130vh;
+  }
+
   @include respond(phone-big) {
     height: 215vh;
   }
@@ -302,6 +333,9 @@ import Footer from "./components/Footer.vue";
     height: 150vh;
   }
 
+  @include respond(tab-700) {
+    height: 130vh;
+  }
 
   @include respond(phone-big) {
     height: 200vh;

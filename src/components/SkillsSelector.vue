@@ -179,6 +179,10 @@ export default {
     font-family: "Lilita one", cursive;
     font-size: 2.2vw;
 
+    @include respond(tab-700) {
+        font-size: 3vw;
+    }
+
     @include respond(phone-big) {
         font-size: 4vw;
     }
@@ -191,6 +195,12 @@ export default {
     height: 6px;
     background: var(--var-color3);
     transition: width 0.3s;
+
+
+    @include respond(tab-700) {
+        height: 4px;
+    }
+
 
     @include respond(phone-big) {
         height: 3px;
@@ -214,6 +224,10 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include respond(tab-700) {
+        height: 75vw;
+    }
 
     @include respond(phone-big) {
         height: 175vw;
@@ -285,6 +299,10 @@ export default {
     font-family: "Poppins", cursive; 
     font-size: 1.5vw;
     color: var(--var-color4);
+
+    @include respond(tab-700) {
+        font-size: 1rem;
+    }
 
     @include respond(phone-big) {
         font-size: 1rem;

@@ -91,6 +91,13 @@
         border-radius: 5vw 5vw;
     }
     
+    @include respond(tab-700){
+        width: 40vw;
+        height: 30vw;
+        transform: translateX(0%);
+        border-radius: 5vw 5vw;
+    }
+
     @include respond(phone-big) {
         width: 80vw;
         height: 50vw;

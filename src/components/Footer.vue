@@ -36,6 +36,11 @@
     font-family: 'Poppins', cursive;
 
 
+    @include respond(tab-700) {
+        height: 15vh;
+    }
+
+
     @include respond(phone-big) {
         height: 15vh;
         text-align: center;
@@ -63,6 +68,12 @@
     cursor: pointer;
     z-index: 1;
     overflow: hidden;
+
+
+    @include respond(tab-700) {
+        width: 15vw;
+        height: 4vw;
+    }
 
     @include respond(phone-big) {
         width: 20vw;
@@ -118,10 +129,14 @@
     position: relative;
     transition: 0.5s;
 
+    @include respond(tab-700) {
+        font-size: 2vw;
+    }
+
+
     @include respond(phone-big) {
         font-size: 3vw;
     }
-
 
     @include respond(phone) {
         font-size: 4vw;
