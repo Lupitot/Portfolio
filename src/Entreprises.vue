@@ -17,7 +17,10 @@ import ListEntreprises from "./components/ListEntreprises.vue";
 
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+
+@import "./assets/responsive.scss";
+
 .contentEntreprises {
     display: flex;
     flex-direction: column;
@@ -32,6 +35,10 @@ import ListEntreprises from "./components/ListEntreprises.vue";
     font-size: 5vw;
     color: var(--var-color4);
     font-family: "Lilita One", cursive;
+
+    @include respond(tab-port){
+        font-size: 7vw;
+    }
 }
 
 </style>
