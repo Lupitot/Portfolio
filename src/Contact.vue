@@ -18,7 +18,9 @@ import FollowMouse from "./components/FollowMouse.vue";
 </script>
   
   
-<style lang="css" scoped>
+<style lang="scss" scoped>
+
+@import "./assets/responsive.scss";
 
 .ContentContact{
     height: 90vh;
@@ -27,6 +29,7 @@ import FollowMouse from "./components/FollowMouse.vue";
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    
 }
 
 .ContentContact h1{

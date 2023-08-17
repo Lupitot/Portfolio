@@ -26,12 +26,24 @@
 <script setup>
 </script>
 
-<style lang="css">
+<style lang="scss">
+
+@import "../assets/responsive.scss";
+
+
 .contentLinkContact {
     width: 65%;
     height: 50%;
     display: flex;
     gap: 1vw;
+    @include respond(tab-port){
+        flex-direction: column;
+    }
+
+    @include respond(phone-big){
+        height: 70%;
+        gap: 10vw;
+    }
 }
 
 .boxContact {
@@ -49,6 +61,15 @@
     border-radius: 10px;
     border: 2px solid var(--var-color3);
     color: var(--var-color4);
+    
+    @include respond(tab-port){
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: 10vh;
+    }
+
+    
 }
 
 .boxContact:nth-child(1) {
@@ -78,6 +99,11 @@
     font-weight: 300;
     font-family: 'Lilita One', cursive;
     transition: ease-in 0.8s;
+
+    @include respond(tab-port){
+        font-size: 7vw;
+        rotate: 0deg;
+    }
 }
 
 .boxContact:hover {
