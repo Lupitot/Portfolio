@@ -37,8 +37,21 @@
     gap: 20px;
     transform: translateY(45%);
 
+    @include respond(tab-port) {
+        transform: translateY(60%);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10vw;
+
+    }
+
     @include respond(phone-big) {
         transform: translateY(14%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -50,7 +63,7 @@
     width: 0.7vw;
     background-color: var(--var-color1);
 
-    @include respond(phone-big) {
+    @include respond(tab-port) {
         display: none;
     }
     
@@ -69,6 +82,14 @@
     justify-content: space-between;
     transform: translateX(70%);
     box-shadow: 0.7vw 0.7vw 0px 0px var(--var-color2); 
+
+
+    @include respond(tab-port) {
+        width: 40vw;
+        height: 25vw;
+        transform: translateX(0%);
+        border-radius: 5vw 5vw;
+    }
     
     @include respond(phone-big) {
         width: 80vw;
@@ -89,6 +110,11 @@
 .timeline li:nth-child(odd) {
     transform: translateX(-70%);
     border-radius: 5vw 0px;
+
+    @include respond(tab-port) {
+        transform: translateX(0%);
+        border-radius: 5vw 5vw;
+    }
 
     @include respond(phone-big) {
         transform: translateX(0%);
@@ -116,6 +142,10 @@
     border-radius: 50%;
     box-sizing:border-box;
 	transform: translate(50%,-50%);
+
+    @include respond(tab-port) {
+        display: none;
+    }
 
     @include respond(phone-big) {
         display: none;

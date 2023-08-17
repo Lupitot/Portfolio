@@ -70,6 +70,13 @@ const menuOpen = ref(false);
     transition: color 1s ease-in-out;
 
 
+    @include respond(tab-port) {
+        font-size: 3vw;
+        width: 20vw;
+        height: 5vw;
+    }
+
+
     @include respond(phone-big) {
         font-size: 5vw;
         width: 33vw;
@@ -96,6 +103,11 @@ const menuOpen = ref(false);
     border-radius: 30px;
     transition: 0.5s;
     right: 100%;
+
+
+    @include respond(tab-port) {
+        height: 5vw;
+    }
 
 
     @include respond(phone-big) {
@@ -184,6 +196,13 @@ input[type="checkbox"]:checked~.content {
     opacity: 0;
     cursor: pointer;
 
+
+    @include respond(tab-port) {
+        right: 25px;
+        top: 25px;
+        height: 35px;
+        width: 35px;
+    }
 
     @include respond(phone-big) {
         right: 20px;
