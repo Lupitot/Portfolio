@@ -18,14 +18,21 @@ import ListPostBlog from "./components/ListPostBlog.vue";
 </script>
   
   
-<style lang="css" scoped>
+<style lang="scss" scoped>
+
+@import "./assets/responsive.scss";
 
 .contentBlog {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     width: 100%;
     height: 90vh;
+
+    @include respond(tab-land){
+        justify-content: space-between;
+    }
 }
 
 .contentBlog h1 {
@@ -34,6 +41,16 @@ import ListPostBlog from "./components/ListPostBlog.vue";
     color: var(--var-color4);
     font-family: "Lilita One", cursive;
     margin-bottom: -1.5rem;
+
+    @include respond(tab-port){
+        font-size: 7vw;
+    }
+
+    @include respond(phone){
+        font-size: 10vw;
+    }
+    
+
 
 }
 
