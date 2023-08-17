@@ -37,6 +37,10 @@
     gap: 20px;
     transform: translateY(45%);
 
+    @include respond(tab-land) {
+        transform: translateY(40%);
+    }
+
     @include respond(tab-port) {
         transform: translateY(60%);
         display: grid;

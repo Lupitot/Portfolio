@@ -64,6 +64,9 @@ import Footer from "./components/Footer.vue";
   align-items: center;
   justify-content: space-between;
 
+  @include respond(tab-1000){
+    height: 90vh;
+  }
   
   @include respond(tab-port){
     height: 75vh;
@@ -280,6 +283,10 @@ import Footer from "./components/Footer.vue";
 
   @include respond(tab-land){
     height: 230vh;
+  }
+
+  @include respond(tab-1000){
+    height: 190vh;
   }
 
   @include respond(tab-port){
