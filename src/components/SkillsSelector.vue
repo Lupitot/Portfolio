@@ -156,7 +156,12 @@ export default {
     flex-direction: column;
     gap: 3vw;
 
+    @include respond(tab-land) {
+        transform: translateY(15%);
+    }
+
     @include respond(phone-big) {
+        transform: translateY(5%);
         justify-content: space-between;
         height: 190vw;
     }

@@ -84,6 +84,12 @@
     box-shadow: 0.7vw 0.7vw 0px 0px var(--var-color2); 
 
 
+    @include respond(tab-land) {
+        width: 30vw;
+        height: 20vw;
+    }
+
+
     @include respond(tab-port) {
         width: 40vw;
         height: 25vw;

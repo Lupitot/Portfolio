@@ -36,6 +36,10 @@
     font-family: 'Poppins', cursive;
 
 
+    @include respond(tab-land){
+        height: 13vh;
+    }
+
     @include respond(tab-700) {
         height: 15vh;
     }
@@ -69,6 +73,10 @@
     z-index: 1;
     overflow: hidden;
 
+    @include respond(tab-land){
+        width: 12vw;
+        height: 3vw;
+    }
 
     @include respond(tab-700) {
         width: 15vw;

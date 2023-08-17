@@ -197,6 +197,14 @@ input[type="checkbox"]:checked~.content {
     cursor: pointer;
 
 
+    @include respond(tab-land) {
+        right: 30px;
+        top: 30px;
+        height: 40px;
+        width: 40px;
+    }
+
+
     @include respond(tab-port) {
         right: 25px;
         top: 25px;

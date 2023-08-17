@@ -277,6 +277,11 @@ import Footer from "./components/Footer.vue";
   justify-content: space-between;
   flex-direction: column;
 
+
+  @include respond(tab-land){
+    height: 230vh;
+  }
+
   @include respond(tab-port){
     height: 150vh;
   }
@@ -342,6 +347,11 @@ import Footer from "./components/Footer.vue";
   flex-direction: column;
   gap: 5vw;
 
+
+  @include respond(tab-land){
+    height: 180vh;
+  }
+
   @include respond(tab-port){
     height: 150vh;
   }
@@ -373,5 +383,13 @@ import Footer from "./components/Footer.vue";
   font-size: 5vw;
   color: var(--var-color4);
   font-family: "Lilita One", cursive;
+
+  @include respond(tab-land) {
+    transform: translateY(50%);
+  }
+
+  @include respond(phone-500){
+    transform: translateY(0%);
+  }
 }
 </style>
