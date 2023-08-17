@@ -37,6 +37,10 @@ import FollowMouse from "./components/FollowMouse.vue";
     color: var(--var-color4);
     font-family: 'Lilita One', cursive;
     animation: apparitionTitle 1s ease-in-out;
+
+    @include respond(tab-port){
+        font-size: 7vw;
+    }
 }
 
 </style>
