@@ -161,6 +161,10 @@ import Footer from "./components/Footer.vue";
     width: 100%;
   } 
 
+  @include respond(phone-500) {
+    font-size: 3.5vw;
+  }
+
   @include respond(phone-moyen) {
     font-size: 4vw;
   }
@@ -202,6 +206,11 @@ import Footer from "./components/Footer.vue";
   @include respond(phone-big) {
     width: 40vw;
     height: 40vw;
+  }
+
+  @include respond(phone-500) {
+    width: 55vw;
+    height: 55vw;
   }
 
   @include respond(phone-moyen) {
@@ -277,7 +286,11 @@ import Footer from "./components/Footer.vue";
   }
 
   @include respond(phone-big) {
-    height: 215vh;
+    height: 235vh;
+  }
+
+  @include respond(phone-500) {
+    height: 200vh;
   }
 
   @include respond(phone-moyen) {
@@ -339,6 +352,10 @@ import Footer from "./components/Footer.vue";
 
   @include respond(phone-big) {
     height: 200vh;
+  }
+
+  @include respond(phone-500) {
+    height: 175vh;
   }
 
   @include respond(phone-moyen) {
