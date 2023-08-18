@@ -7,7 +7,7 @@
                 </span>
                 <span class="contentTextPost">
                     <h2>{{ post.titre }}</h2>
-                    <p>{{ post.contenu }}</p>
+                    <p class="detectScroll">{{ post.contenu }}</p>
                     <button @click="handleCardSize" >Voir plus</button>
                 </span>
                 
@@ -33,12 +33,16 @@ export default {
   },
   methods: {
     handleVerticalScroll(event) {
-      if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
-        this.$refs.cardContainer.scrollLeft += event.deltaY;
-      }
+
+        if (event.target.classList.contains("detectScroll")) {
+            return;
+        }
+
+        if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
+            this.$refs.cardContainer.scrollLeft += event.deltaY;
+        }
     },
     handleCardSize(event) {
-
         if (event.target.textContent === "Voir plus" && !document.querySelector(".cardBlogSize")) {
             event.target.textContent = event.target.textContent.replace("Voir plus", "Voir moins");
             event.target.parentNode.parentNode.classList.toggle("cardBlogSize");
@@ -313,9 +317,10 @@ export default {
     overflow: visible;
     -webkit-line-clamp: unset;
     height: 20vw;
+    overflow-y: auto;
     
     @include respond(tab-land){
-        overflow-y: auto;
+        // overflow-y: auto;
         height: 40vw;
     }
 
