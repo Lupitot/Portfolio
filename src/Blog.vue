@@ -15,6 +15,12 @@ import Footer from "./components/Footer.vue";
 import FollowMouse from "./components/FollowMouse.vue";
 import ListPostBlog from "./components/ListPostBlog.vue";
 
+// if (document.querySelector(".cardBlogSize")){
+//     console.log("test");
+//     document.querySelector(".contentBlog").style = "height: 90vh;";
+//     console.log(document.querySelector(".contentBlog").style);
+// }
+
 </script>
   
   
@@ -29,7 +35,6 @@ import ListPostBlog from "./components/ListPostBlog.vue";
     justify-content: space-around;
     width: 100%;
     height: 90vh;
-
     @include respond(tab-land){
         justify-content: space-between;
     }

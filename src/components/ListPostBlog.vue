@@ -34,7 +34,7 @@ export default {
   methods: {
     handleVerticalScroll(event) {
 
-        if (event.target.classList.contains("detectScroll")) {
+        if (document.querySelector(".cardBlogSize")) {
             return;
         }
 
@@ -43,10 +43,17 @@ export default {
         }
     },
     handleCardSize(event) {
+
         if (event.target.textContent === "Voir plus" && !document.querySelector(".cardBlogSize")) {
+            if (window.innerWidth > 1200) {
+            document.querySelector(".contentBlog").style = "height: auto;";
+            }
             event.target.textContent = event.target.textContent.replace("Voir plus", "Voir moins");
             event.target.parentNode.parentNode.classList.toggle("cardBlogSize");
         } else if (document.querySelector(".cardBlogSize")) {
+            if (window.innerWidth > 1200) {
+                document.querySelector(".contentBlog").style = "height: 90vh;";
+            }
             if (event.target.textContent === "Voir moins") {
                 event.target.textContent = event.target.textContent.replace("Voir moins", "Voir plus");
                 event.target.parentNode.parentNode.classList.toggle("cardBlogSize");
@@ -79,8 +86,7 @@ export default {
     overflow-x: auto;
     gap: 5vw;
     width: 100%;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding: 5vw 5vw 0 5vw;
 
 
 
@@ -282,51 +288,28 @@ export default {
 
 
 .cardBlogSize {
-    width: 65vw;
-    height: 35vw;
+    width: 80vw;
+    height: 90%;
     transition: all 1s ease-in-out;
 
     @include respond(tab-land){
         width: 80vw;
-        height: 70vw;
+        height: auto;
     }
 
     @include respond(tab-700){
         width: 90vw;
-        height: 90vw;
     }
 
-    @include respond(phone-500){
-        width: 90vw;
-        height: 110vw;
-    }
-
-    @include respond(phone-moyen){
-        width: 90vw;
-        height: 155vw;
-    }
-
-    @include respond(phone){
-        width: 90vw;
-        height: 250vw;
-    }
 }
 
 .cardBlogSize p {
     text-overflow: clip;
     overflow: visible;
     -webkit-line-clamp: unset;
-    height: 20vw;
-    overflow-y: auto;
+    height: auto;
+    // overflow-y: auto;
     
-    @include respond(tab-land){
-        // overflow-y: auto;
-        height: 40vw;
-    }
-
-    @include respond(phone){
-        height: 80vw;
-    }
 }
 
 .cardBlogSize p::-webkit-scrollbar {
@@ -343,10 +326,6 @@ export default {
 .cardBlogSize p::-webkit-scrollbar-track {
     background-color: var(--var-color1);
     border-radius: 30px;
-}
-
-.cardBlogSize .contentImagePost {
-    height: 40%;
 }
 
 .cardBlogSize .contentTextPost {

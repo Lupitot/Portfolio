@@ -111,11 +111,15 @@
         height: 30vw;
         transform: translateX(0%);
         border-radius: 5vw 5vw;
+
     }
 
     @include respond(phone-big) {
         width: 80vw;
-        height: 67vw;
+        height: auto;
+        padding: 5vw;
+        gap: 5vw;
+        text-align: center;
         transform: translateX(0%);
         border-radius: 5vw 5vw;
     }
