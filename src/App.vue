@@ -310,7 +310,7 @@ import Footer from "./components/Footer.vue";
   }
 
   @include respond(phone) {
-    height: 230vh;
+    height: 250vh;
   }
 }
 
