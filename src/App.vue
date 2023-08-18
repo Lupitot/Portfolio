@@ -6,7 +6,7 @@
       <GlowCirclePicture class="glowCircle"></GlowCirclePicture>
       <span class="TextContent">
         <h3 class="PresentationTitle">Paul Piauger</h3>
-        <h4 class="PresentationText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dicta eos error delectus natus, inventore nisi quam suscipit amet ipsa, dolorem adipisci autem nam eligendi quisquam, repudiandae excepturi beatae illo.
+        <h4 class="PresentationText">Bienvenue sur mon portfolio ! Je suis Paul, un étudiant en informatique passionné par le développement. Je vous laisse découvrir, à travers mon site, mes réalisations, mes expériences et mon blog. Bonne exploration !
         </h4>
       </span>
     </span>
@@ -310,7 +310,7 @@ import Footer from "./components/Footer.vue";
   }
 
   @include respond(phone) {
-    height: 150vh;
+    height: 230vh;
   }
 }
 
