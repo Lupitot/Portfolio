@@ -15,7 +15,10 @@ import ListProjets from "./components/ListProjets.vue";
 import Footer from "./components/Footer.vue";
 </script>
 
-<style lang="css">
+<style lang="scss">
+
+@import "./assets/responsive.scss";
+
 
 .contentProjet {
   height: auto;
@@ -34,6 +37,22 @@ import Footer from "./components/Footer.vue";
   color: var(--var-color4);
   font-family: "Lilita One", cursive;
   animation: apparitionTitle 1s ease-in-out;
+
+  @include respond(tab-800) {
+    font-size: 8vw;
+  }
+
+  @include respond(phone-big) {
+    font-size: 10vw;
+  }
+
+  @include respond(phone-500) {
+    font-size: 12vw;
+  }
+
+  @include respond(phone-330){
+    font-size: 17vw;
+  }
 }
 
 </style>

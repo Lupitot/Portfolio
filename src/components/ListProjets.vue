@@ -67,7 +67,10 @@ export default {
 
 </script>
 
-<style lang="css">
+<style lang="scss">
+
+@import "../assets/responsive.scss";
+
 .ProjetContainer {
     display: flex;
     flex-direction: row;
@@ -78,10 +81,51 @@ export default {
     width: 80%;
     height: 35vw;
     gap: 10vw;
+
+    @include respond(desktop) {
+        width: 90%;
+        height: 40vw;
+    }
+
+    @include respond(desktop-1550) {
+        width: 100%;
+        height: 45vw;
+    }
+
+    @include respond(desktop-1350) {
+        height: 55vw;
+    }
+
+    @include respond(tab-land) {
+        flex-direction: column;
+        gap: 5vw;
+        height: 135vh;
+    }
+
+    @include respond(tab-port) {
+        height: 150vh;
+    }
+
+    @include respond(tab-800) {
+        height: 160vh;
+    }
+
+    @include respond(phone-big) {
+        height: 170vh;
+    }
+
+    @include respond(phone-500) {
+        height: 180vh;
+        justify-content: space-around;
+    }
 }
 
 .ProjetContainer:nth-child(odd) {
     flex-direction: row-reverse;
+
+    @include respond(tab-land) {
+        flex-direction: column;
+    }
 }
 
 .faceProjet {
@@ -92,6 +136,35 @@ export default {
     width: 50%;
     height: 100%;
     padding: 2vw;
+
+    @include respond(desktop-1350) {
+        height: 75%;
+    }
+
+    @include respond(tab-land) {
+        width: 80%;
+        height: 55%;
+        gap: 5vw;
+    }
+
+    @include respond(tab-700) {
+        width: 80%;
+        height: 35%;
+    }
+
+    @include respond(phone-big) {
+        width: 100%;
+        height: 35%;
+    }
+
+    @include respond(phone-500) {
+        height: 27%;
+    }
+
+    @include respond(phone-330){
+        height: 20%;
+    }
+
 }
 
 .faceProjet a {
@@ -101,6 +174,16 @@ export default {
     justify-content: center;
     align-items: center;
     color: var(--var-color4);
+
+    @include respond(tab-800) {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    @include respond(phone-500) {
+        width: 15vw;
+        height: 15vw;
+    }
 }
 
 .faceProjet a svg {
@@ -119,6 +202,7 @@ export default {
     font-weight: 400;
     color: var(--var-color4);
     font-family: "Lilita One", cursive;
+    text-align: center;
 }
 
 .faceProjet img {
@@ -141,6 +225,47 @@ export default {
     transform: perspective(1500px) rotateY(15deg);
     box-shadow: -10px 10px 0px 0 var(--var-color2);
     transition: all 0.3s ease-in;
+
+    @include respond(tab-land) {
+        width: 80%;
+        height: 45%;
+        text-align: center;
+    }
+
+    @include respond(tab-port) {
+        padding: 3vw;
+        width: 80%;
+        height: 55%;
+    }
+
+    @include respond(tab-800){
+        padding: 5vw;
+    }
+
+    @include respond(tab-700) {
+        width: 80%;
+        height: 65%;
+    }
+
+    @include respond(phone-big) {
+        width: 100%;
+        height: 55%;
+        transform: perspective(1500px) rotateY(0deg);
+    }
+
+    @include respond(phone-500) {
+        height: 65%;
+    }
+
+    @include respond(phone-moyen) {
+        height: 75%;
+    }
+
+    @include respond(phone-330){
+        height: auto;
+    }
+
+
 }
 
 .descriptionProjet:hover {
@@ -152,6 +277,10 @@ export default {
 .ProjetContainer:nth-child(odd) .descriptionProjet {
     transform: perspective(1500px) rotateY(-15deg);
     box-shadow: 10px 10px 0px 0 var(--var-color2);
+
+    @include respond(phone-big) {
+        transform: perspective(1500px) rotateY(0deg);
+    }
 }
 
 .ProjetContainer:nth-child(odd) .descriptionProjet:hover {
@@ -167,6 +296,14 @@ export default {
     color: var(--var-color1);
     text-align: justify;
     font-family: "Poppins", cursive;
+
+    @include respond(desktop) {
+        font-size: 1.1rem;
+    }
+
+    @include respond(phone-330) {
+        font-size: 0.9rem;
+    }
 }
 
 .descriptionProjet ul {
@@ -185,11 +322,23 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond(tab-800) {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    @include respond(phone-big) {
+        width: 15vw;
+        height: 15vw;
+    }
 }
 
 .descriptionProjet ul li .icon {
     width: 100%;
     height: 100%;
     color: var(--var-color4);
+
+
 }
 </style>
