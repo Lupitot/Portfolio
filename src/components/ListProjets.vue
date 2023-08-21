@@ -283,12 +283,19 @@ export default {
     }
 }
 
+
+
 .ProjetContainer:nth-child(odd) .descriptionProjet:hover {
     transform: perspective(1500px) rotateY(0deg);
     box-shadow: 0px 0px 0px 0 var(--var-color2);
     transition: all 0.3s ease-in;
 }
 
+
+.descriptionProjet:hover ul li .icon{
+    color: var(--var-color1);
+    transition: all 0.3s ease-in-out;
+}
 
 .descriptionProjet p {
     font-size: 1rem;
@@ -338,6 +345,7 @@ export default {
     width: 100%;
     height: 100%;
     color: var(--var-color4);
+    transition: all 0.3 ease-in-out;
 
 
 }

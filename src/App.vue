@@ -272,7 +272,7 @@ import Footer from "./components/Footer.vue";
 /* style partie parcours */
 
 .Parcours {
-  height: 250vh;
+  height: 220vh;
   width: 100%;
   background-color: var(--var-color3);
   display: flex;
@@ -290,7 +290,7 @@ import Footer from "./components/Footer.vue";
   }
 
   @include respond(tab-port){
-    height: 150vh;
+    height: 130vh;
   }
 
   @include respond(tab-700) {

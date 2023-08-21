@@ -44,18 +44,18 @@ export default {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 120vh;
+    height: auto;
     background-color: var(--var-color3);
     padding-bottom: 2rem;
 
 
-    @include respond(phone-500) {
-        height: 100vh;
-    }
+    // @include respond(phone-500) {
+    //     height: 100vh;
+    // }
 
-    @include respond(phone-moyen) {
-        height: 120vh;
-    }
+    // @include respond(phone-moyen) {
+    //     height: 120vh;
+    // }
 }
 
 
@@ -74,20 +74,20 @@ export default {
 
 .entrepriseInfo {
     width: 90%;
-    height: 75%;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 
-    @include respond(tab-700) {
-        transform: translateY(-20%);
+    @include respond(tab-1000) {
+        // transform: translateY(-20%);
         flex-direction: column;
         justify-content: space-between;
     }
 
     @include respond(phone-500) {
-        transform: translateY(-30%);
+        // transform: translateY(-20%);
     }
 }
 
@@ -95,7 +95,7 @@ export default {
 .containerEntreprises:nth-child(odd) .entrepriseInfo {
     flex-direction: row-reverse;
 
-    @include respond(tab-700) {
+    @include respond(tab-1000) {
         flex-direction: column;
         justify-content: space-between;
     }
@@ -108,7 +108,7 @@ export default {
     justify-content: space-around;
     width: 30%;
     height: 80%;
-    color: var(--var-color4);
+    color: var(--var-color1);
     font-family: "Lilita one", sans-serif;
     font-size: 3.7vw;
 
@@ -119,6 +119,9 @@ export default {
     }
 }
 
+.containerEntreprises:nth-child(odd) .frontEntreprise{
+    color: var(--var-color4);
+}
 
 
 .frontEntreprise img {
@@ -137,32 +140,36 @@ export default {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    height: 80%;
+    height: auto;
     background-color: var(--var-color1);
     color: var(--var-color4);
     font-family: "Poppins", sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
     text-align: justify;
-    padding: 1rem;
+    padding: 3rem;
     box-shadow: -10px 10px 0px 0 var(--var-color2);
     border-radius: 20px;
 
     @include respond(tab-700) {
         width: 80%;
-        height: 70%;
         font-size: 2.5vw;
     }
 
     @include respond(phone-500) {
         width: 95%;
-        height: 100%;
         font-size: 4vw;
     }
 
     @include respond(phone-moyen) {
-        font-size: 5.5vw;
+        // font-size: 5.5vw;
     }
+}
+// saut de ligne au \n
+.descriptionEntreprise p {
+    white-space: pre-line;
+
+
 }
 
 .containerEntreprises:nth-child(odd) .descriptionEntreprise {

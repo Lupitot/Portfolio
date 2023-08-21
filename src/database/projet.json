@@ -21,9 +21,12 @@
             "altImage" : "altImage2",
             "lienGithub" : "lienGithub2",
             "langage" : {
-                "langage1" : "langage1",
-                "langage2" : "langage2",
-                "langage3" : "langage3"
+                "langage1" : {
+                    "icone" : "Unity"
+                },
+                "langage2" : {
+                    "icone" : "Csharp"
+                }
             }
         },
         "projet3" : {
