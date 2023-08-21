@@ -119,6 +119,25 @@ export default {
     }
 }
 
+.frontEntreprise h3 {
+    font-size: 6vw;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+
+    @include respond(tab-1000) {
+        font-size: 8vw;
+    }
+
+    @include respond(tab-700) {
+        font-size: 14vw;
+    }
+
+    @include respond(phone-moyen) {
+        font-size: 16vw;
+    }
+}
+
 .containerEntreprises:nth-child(odd) .frontEntreprise{
     color: var(--var-color4);
 }
@@ -150,6 +169,10 @@ export default {
     padding: 3rem;
     box-shadow: -10px 10px 0px 0 var(--var-color2);
     border-radius: 20px;
+
+    @include respond(tab-1000) {
+        width: 80%;
+    }
 
     @include respond(tab-700) {
         width: 80%;
