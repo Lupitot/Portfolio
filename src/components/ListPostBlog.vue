@@ -46,7 +46,7 @@ export default {
 
             setTimeout(() => {
                 container.removeEventListener("wheel", preventScroll);
-            }, 1000);
+            }, 1800);
 
         },
         handleVerticalScroll(event) {

@@ -11,31 +11,36 @@
             "id": "2",
             "image": "/portfolio/imageBlog/tableau_reunion.jpg",
             "titre": "Mon Stage Oniti : Premier projet Pro",
+            "altImage" : "Photo du tableau de reunion avec des post-it",
             "contenu": "Pour réaliser un stage dans les règles de l'art, il faut un projet, de quoi travailler pour ne pas s'ennuyer.\n Une collègue, Diane, également formatrice, a eu l'idée d'un projet, une application permettant de remplacer ce qu'elle faisait avant au format papier. Cette application est un outil de révision et d'apprentissage ; on y trouve un jeu à la \"Time's Up\", dans lequel les étudiants vont devoir décrire, chacun leur tour, un mot qu'il leur aura été donné ; les autres devront trouver le plus rapidement possible le mot décrit. Une fois le jeu fini, les étudiants auront accès à la liste de mots pour pouvoir continuer à réviser.\n \nJ'ai donc eu une réunion avec la \"cliente\", ici Diane, pour faire une simulation de vrai projet. À la suite de ce rendez-vous, j'ai rédigé un brief permettant de résumer les besoins et les attentes de la cliente, mais aussi de mettre en place l'ordre des priorités parmi les fonctionnalités pour prévoir le contenu des différentes versions."
         },
         "NomDuPost3": {
             "id": "3",
-            "image": "image.jpg",
-            "titre": "Titre du post3",
-            "contenu": "Contenu du post3"
+            "image": "/portfolio/imageBlog/Tableau_schema_SQL.jpg",
+            "titre": "Mon Stage Oniti : Commencement du projet",
+            "altImage" : "Photo du tableau de schema SQL",
+            "contenu": "Après avoir réalisé le brief, une base était prête pour commencer le projet. J'ai commencé par me renseigner sur les technologies Laravel, Vue et Quasar, utilisées dans la template maison d'Oniti. Puis, avec l'aide de Marc, un collègue, nous avons initialisé le projet avec la template. Il m'a présenté le fonctionnement, et ensuite j'ai compris que pour développer des applications c'était très pratique car les fonctionnalités de base étaient déjà implémentées, comme le système de connexion par exemple. \n\n Avec des fonctionnalités basiques déjà incluses dans la template, j'ai pu me concentrer sur le fonctionnement global de la template et sur le projet en lui-même. J'ai commencé par créer le schéma de la base de données pour éviter toute erreur. Pour ce schéma, j'ai bénéficié de l'aide des développeurs d'Oniti, qui m'ont empêché d'oublier certaines tables ou colonnes auxquelles je n'avais pas pensé.\n\nUne fois les bases posées, j'ai enfin pu me lancer. Travailler avec la template ne s'est pas révélé aussi simple que prévu, car de nombreux éléments sont personnalisés et parfois peu intuitifs à comprendre pour un novice en Laravel. J'ai donc été confronté à des problèmes, mais heureusement Marc a pu me guider et m'aider à comprendre. \n\nCe projet a été une bonne expérience pour découvrir la manière dont l'entreprise travaille et réalise ses projets, ainsi que pour s'initier à l'utilisation de frameworks. Même si je n'ai pas pu achever le projet, cette expérience s'est avérée enrichissante."
         },
         "NomDuPost4": {
             "id": "4",
-            "image": "image.jpg",
-            "titre": "Titre du post",
-            "contenu": "Contenu du post"
+            "image": "/portfolio/imageBlog/image_portfolio.png",
+            "titre": "Mon Stage Oniti : Realisation de mon super portfolio",
+            "altImage" : "Photo de mon portfolio",
+            "contenu": "Pendant ce stage, j'ai eu la chance de pouvoir travailler sur mon portfolio. En effet, comme la plupart des employés étaient en vacances, Marc était bien occupé et ne pouvait donc pas passer tout son temps à m'aider. J'ai donc choisi de commencer à apprendre Vue grâce à mon portfolio.\n\n Avant de me lancer tête baissée dans la réalisation de mon site, j'ai d'abord fait un wireframe, une palette de couleurs et une maquette. Grâce à tout cela, j'avais une idée de la direction dans laquelle je voulais aller pour la réalisation de mon site. Avec l'expertise de Sybil, une collègue développeuse UX, j'ai pu améliorer l'accessibilité de mon site et son esthétisme.\n\nMaintenant, je n'avais plus qu'à coder, et je m'y suis mis ! J'ai beaucoup aimé réaliser ce site car je n'avais pas les contraintes d'un client. Je me suis donc amusé à créer des animations pour me challenger, le tout dans un framework que je découvrais.\n\nUne fois le site terminé, je me suis penché sur le responsive, afin qu'il soit accessible sur tout type d'écran. Encore une fois, Sybil m'a donné une astuce : utiliser du SCSS pour réaliser le responsive avec des mixins, permettant ainsi d'ajouter simplement quelques lignes à la suite d'un élément qui s'adapte mal à un format d'écran. Comme j'avais un certain nombre d'éléments, ce ne fut pas de tout repos, mais j'ai réussi à terminer.\n\nEnfin, j'ai pu passer au remplissage des textes. Avec un peu d'inspiration et du temps, j'ai fini par obtenir ce que je voulais pour mon site. Je trouve qu'il me ressemble et j'en suis plutôt fier :)"
         },
         "NomDuPost5": {
             "id": "5",
-            "image": "image.jpg",
-            "titre": "Titre du post",
-            "contenu": "Contenu du post"
+            "image": "/portfolio/imageBlog/logo_WordPress.png",
+            "titre": "Mon Stage Oniti : Découverte de WordPress",
+            "altImage" : "Logo de WordPress",
+            "contenu": "À mon arrivée chez Oniti, on m'a présenté la façon dont les sites réalisés par l'entreprise étaient gérés. Ils sont conçus sur WordPress avec Elementor, et de nombreux widgets sont également développés en parallèle. L'utilisation de WordPress permet de gagner du temps pour certaines fonctionnalités qui sont déjà préconstruites, ainsi que pour la mise en place des éléments visuels, ce qui simplifie le processus. \n \nUn autre avantage réside dans le fait que WordPress est plus accessible à comprendre que du code brut. Les clients peuvent ainsi avoir le contrôle et effectuer eux-mêmes des modifications, comme un changement d'image, par exemple. Étant donné que WordPress facilite le travail et accélère le processus de création, cela permet de rester compétitif et de proposer des tarifs plus abordables grâce aux gains de temps réalisés.\n\nMalgré tous ces avantages, je ne suis pas fan des sites WordPress. En effet, ce que j'aime dans la création de sites internet, c'est de tout construire à partir de lignes de code et de voir notre site prendre forme petit à petit. Je trouve que cet aspect se perd un peu sur WordPress, même s'il est toujours possible d'écrire du code dessus. Pour ma part, je pense donc attendre avant de me plonger plus sérieusement dans l'utilisation de WordPress."
         },
         "NomDuPost6": {
             "id": "6",
-            "image": "image.jpg",
-            "titre": "Titre du post",
-            "contenu": "Contenu du post"
+            "image": "/portfolio/imageBlog/teamWork_blog.png",
+            "titre": "Mon Stage Oniti : Découverte d'une organisation",
+            "altImage" : "Description de l'image",
+            "contenu": "Un stage est une immersion dans le monde du travail. Cette immersion permet de monter en compétence, mais également d'observer comment fonctionne une entreprise en dehors de la production.\n\nChez Oniti, j'ai pu constater qu'il y avait un véritable suivi des projets et de l'avancement de chacun. En effet, grâce au \"stand up\", des mini réunions en fin de matinée permettant à chacun de s'exprimer sur l'avancement du projet sur lequel il travaille. C'est également le moment pour signaler les différents problèmes rencontrés ou annoncer de nouveaux contrats avec des clients. En résumé, c'est le moment de faire le point sur tout ce qui concerne l'entreprise. Personnellement, je trouve que c'est une excellente idée et je n'avais jamais vu un tel système, ce qui est dommage.\n\nPour la programmation du travail, le dernier vendredi du mois, ils établissent le planning pour déterminer sur quel projet travailler, quels jours et quand fixer des points avec les clients. Encore une fois, je trouve que c'est une très bonne méthode pour ne pas avoir à se poser la question de \"qu'est-ce que je fais\" en arrivant au travail.\n\nJ'ai donc beaucoup appris sur l'organisation pendant ce stage, et je suis persuadé que ces méthodes pourraient me servir un jour."
         }
     }
 }
