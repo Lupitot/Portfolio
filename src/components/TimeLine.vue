@@ -11,7 +11,7 @@
             </li>
             <li>
                 <h4>2021 2022 :</h4>
-                <p>Première année de Bachelor à Nantes Ynov Campus. Découverte approfondie du monde du développement. Début de mon emploi étudiant chez KFC. Stage à l'université de Tours à l'antenne de Blois en développement et en bases de données.</p>
+                <p>Première année de Bachelor à Nantes Ynov Campus. Découverte approfondie du monde du développement. Début de mon emploi étudiant chez KFC. Stage à l'université de François Rabelais à l'antenne de Blois en développement et en bases de données.</p>
             </li>
             <li>
                 <h4>2020 2021 :</h4>

@@ -8,9 +8,9 @@
                 <span class="contentTextPost">
                     <h2>{{ post.titre }}</h2>
                     <p class="detectScroll">{{ post.contenu }}</p>
-                    <button @click="handleCardSize" >Voir plus</button>
+                    <button @click="handleCardSize">Voir plus</button>
                 </span>
-                
+
             </div>
         </div>
     </div>
@@ -18,57 +18,80 @@
   
 <script>
 import Json from "../database/blog.json";
+import { ref, vShow } from 'vue';
 
 export default {
-  data() {
-    return {
-      Json: Json.blog,
-    };
-  },
-  mounted() {
-    window.addEventListener("wheel", this.handleVerticalScroll);
-  },
-  beforeDestroy() {
-    window.removeEventListener("wheel", this.handleVerticalScroll);
-  },
-  methods: {
-    handleVerticalScroll(event) {
 
-        if (document.querySelector(".cardBlogSize")) {
-            return;
-        }
 
-        if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
-            this.$refs.cardContainer.scrollLeft += event.deltaY;
-        }
+    data() {
+        return {
+            Json: Json.blog,
+        };
     },
-    handleCardSize(event) {
+    mounted() {
+        window.addEventListener("wheel", this.handleVerticalScroll);
+    },
+    beforeDestroy() {
+        window.removeEventListener("wheel", this.handleVerticalScroll);
+    },
+    methods: {
+        handleVerticalScroll(event) {
 
-        if (event.target.textContent === "Voir plus" && !document.querySelector(".cardBlogSize")) {
-            if (window.innerWidth > 1200) {
-            document.querySelector(".contentBlog").style = "height: auto;";
+            if (document.querySelector(".cardBlogSize")) {
+                return;
             }
-            event.target.textContent = event.target.textContent.replace("Voir plus", "Voir moins");
-            event.target.parentNode.parentNode.classList.toggle("cardBlogSize");
-        } else if (document.querySelector(".cardBlogSize")) {
-            if (window.innerWidth > 1200) {
-                document.querySelector(".contentBlog").style = "height: 90vh;";
+
+            if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
+                this.$refs.cardContainer.scrollLeft += event.deltaY;
             }
-            if (event.target.textContent === "Voir moins") {
-                event.target.textContent = event.target.textContent.replace("Voir moins", "Voir plus");
-                event.target.parentNode.parentNode.classList.toggle("cardBlogSize");
-            } else if(event.target.textContent === "Voir plus") {
-                document.querySelector(".cardBlogSize").querySelector("button").textContent = document.querySelector(".cardBlogSize").querySelector("button").textContent.replace("Voir moins", "Voir plus");
+        },
+        handleCardSize(event) {
+            if (event.target.textContent === "Voir plus" && !document.querySelector(".cardBlogSize")) {
+                //bouger le scroll en fonction de la position de la carte en ajustant la droite et la gauche pour centré
+
+
+
+                if (window.innerWidth > 1200) {
+                    document.querySelector(".contentBlog").style = "height: auto;";
+                }
                 event.target.textContent = event.target.textContent.replace("Voir plus", "Voir moins");
-                document.querySelector(".cardBlogSize").classList.toggle("cardBlogSize");
                 event.target.parentNode.parentNode.classList.toggle("cardBlogSize");
-            }
-        }
 
-        
-        
+                setTimeout(() => {
+                    var card = this.$refs.cardContainer.querySelector(".cardBlogSize");
+                    card.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center',
+                        inline: 'center'
+                    });
+                }, 900);
+            } else if (document.querySelector(".cardBlogSize")) {
+                if (window.innerWidth > 1200) {
+                    document.querySelector(".contentBlog").style = "height: 90vh;";
+                }
+                if (event.target.textContent === "Voir moins") {
+                    event.target.textContent = event.target.textContent.replace("Voir moins", "Voir plus");
+                    event.target.parentNode.parentNode.classList.toggle("cardBlogSize");
+                } else if (event.target.textContent === "Voir plus") {
+                    if (window.innerWidth > 1200) {
+                        document.querySelector(".contentBlog").style = "height: auto;";
+                    }
+                    document.querySelector(".cardBlogSize").querySelector("button").textContent = document.querySelector(".cardBlogSize").querySelector("button").textContent.replace("Voir moins", "Voir plus");
+                    event.target.textContent = event.target.textContent.replace("Voir plus", "Voir moins");
+                    document.querySelector(".cardBlogSize").classList.toggle("cardBlogSize");
+                    event.target.parentNode.parentNode.classList.toggle("cardBlogSize");
+                    setTimeout(() => {
+                    var card = this.$refs.cardContainer.querySelector(".cardBlogSize");
+                    card.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center',
+                        inline: 'center'
+                    });
+                }, 900);
+                }
+            }
+        },
     },
-  },
 };
 
 
@@ -78,7 +101,6 @@ export default {
 </script>
   
 <style lang="scss" scoped>
-
 @import "../assets/responsive.scss";
 
 .cardScrollContainer {
@@ -90,18 +112,18 @@ export default {
 
 
 
-    @include respond(tab-land){
+    @include respond(tab-land) {
         flex-direction: column;
         align-items: center;
         height: 70vh;
         transform: translateY(-5%);
     }
 
-    @include respond(tab-1000){
+    @include respond(tab-1000) {
         height: 75vh;
     }
 
-    @include respond(tab-700){
+    @include respond(tab-700) {
         height: 77vh;
     }
 
@@ -126,37 +148,37 @@ export default {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: all 1s ease-in-out;
 
-    @include respond(tab-land){
+    @include respond(tab-land) {
         width: 50vw;
         height: 60vw;
     }
 
-    @include respond(tab-1000){
+    @include respond(tab-1000) {
         width: 60vw;
         height: 70vw;
     }
 
-    @include respond(tab-700){
+    @include respond(tab-700) {
         width: 80vw;
         height: 90vw;
     }
 
-    @include respond(phone-big){
+    @include respond(phone-big) {
         width: 80vw;
         height: 110vw;
     }
 
-    @include respond(phone-500){
+    @include respond(phone-500) {
         width: 80vw;
         height: 130vw;
     }
 
-    @include respond(phone-moyen){
+    @include respond(phone-moyen) {
         width: 80vw;
         height: 170vw;
     }
 
-    @include respond(phone){
+    @include respond(phone) {
         width: 80vw;
         height: 215vw;
     }
@@ -207,9 +229,11 @@ export default {
     -webkit-line-clamp: 4;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: wrap;
+    white-space: pre-line;
+    text-align: justify;
     color: var(--var-color1);
     font-family: "Poppins", cursive;
+
 }
 
 .contentTextPost button {
@@ -230,49 +254,49 @@ export default {
     transition: all 0.3s ease-in-out;
     box-shadow: 4px 4px 0px 0px #185ADB;
 
-    @include respond(tab-land){
+    @include respond(tab-land) {
         width: 10vw;
         height: 3vw;
         font-size: 1.5vw;
         box-shadow: 3px 3px 0px 0px #185ADB;
     }
 
-    @include respond(tab-1000){
+    @include respond(tab-1000) {
         width: 12vw;
         height: 4vw;
         font-size: 1.7vw;
         box-shadow: 3px 3px 0px 0px #185ADB;
     }
 
-    @include respond(tab-700){
+    @include respond(tab-700) {
         width: 15vw;
         height: 5vw;
         font-size: 2vw;
         box-shadow: 3px 3px 0px 0px #185ADB;
     }
 
-    @include respond(phone-big){
+    @include respond(phone-big) {
         width: 20vw;
         height: 6vw;
         font-size: 2.5vw;
         box-shadow: 3px 3px 0px 0px #185ADB;
     }
 
-    @include respond(phone-500){
+    @include respond(phone-500) {
         width: 25vw;
         height: 7vw;
         font-size: 3vw;
         box-shadow: 3px 3px 0px 0px #185ADB;
     }
 
-    @include respond(phone-moyen){
+    @include respond(phone-moyen) {
         width: 30vw;
         height: 8vw;
         font-size: 3.5vw;
         box-shadow: 3px 3px 0px 0px #185ADB;
     }
 
-    @include respond(phone){
+    @include respond(phone) {
         width: 35vw;
         height: 9vw;
         font-size: 4vw;
@@ -288,17 +312,18 @@ export default {
 
 
 .cardBlogSize {
+    height: auto;
+    margin-bottom: 5vw;
     width: 80vw;
-    height: 90%;
     transition: all 1s ease-in-out;
 
-    @include respond(tab-land){
-        width: 80vw;
+    @include respond(tab-land) {
+        // width: 80vw;
         height: auto;
     }
 
-    @include respond(tab-700){
-        width: 90vw;
+    @include respond(tab-700) {
+        // width: 90vw;
     }
 
 }
@@ -309,7 +334,7 @@ export default {
     -webkit-line-clamp: unset;
     height: auto;
     // overflow-y: auto;
-    
+
 }
 
 .cardBlogSize p::-webkit-scrollbar {
@@ -331,11 +356,11 @@ export default {
 .cardBlogSize .contentTextPost {
     height: 50%;
 
-    @include respond(tab-land){
+    @include respond(tab-land) {
         height: 55%;
     }
 
-    @include respond(phone-moyen){
+    @include respond(phone-moyen) {
         height: 60%;
     }
 }
@@ -359,43 +384,43 @@ export default {
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
 
-    @include respond(tab-land){
+    @include respond(tab-land) {
         width: 10vw;
         height: 3vw;
         font-size: 1.5vw;
     }
 
-    @include respond(tab-1000){
+    @include respond(tab-1000) {
         width: 12vw;
         height: 4vw;
         font-size: 1.7vw;
     }
 
-    @include respond(tab-700){
+    @include respond(tab-700) {
         width: 15vw;
         height: 5vw;
         font-size: 2vw;
     }
 
-    @include respond(phone-big){
+    @include respond(phone-big) {
         width: 20vw;
         height: 6vw;
         font-size: 2.5vw;
     }
 
-    @include respond(phone-500){
+    @include respond(phone-500) {
         width: 25vw;
         height: 7vw;
         font-size: 3vw;
     }
 
-    @include respond(phone-moyen){
+    @include respond(phone-moyen) {
         width: 30vw;
         height: 8vw;
         font-size: 3.5vw;
     }
 
-    @include respond(phone){
+    @include respond(phone) {
         width: 35vw;
         height: 9vw;
         font-size: 4vw;
@@ -409,11 +434,11 @@ export default {
         opacity: 0;
         transform: translateX(-200%);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0%);
     }
 
 }
-
 </style>

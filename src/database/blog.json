@@ -3,15 +3,15 @@
         "Integration Chez Oniti": {
             "id": "1",
             "image": "/portfolio/imageBlog/integrationBlog.png",
-            "titre": "Integration chez Oniti",
+            "titre": "Mon Stage Oniti : Travail et Cohésion !",
             "altImage" : "Photo barbecue de l'equipe Oniti",
-            "contenu": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl lorem cies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl lorem cing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl lorem cies, nunc nisl ultricies nunc, vitae aliq uam nisl nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliq uam nisl lorem test"
+            "contenu": "Pendant ces 6 semaines de stage chez Oniti, j'ai vécu une immersion qui a dépassé toutes mes attentes.\n Les vendredis ont apporté une touche spéciale avec des déjeuners au restaurant ou encore un barbecues en plein air, créant des moments de convivialité et renforçant les liens entre nous.\nLes pauses déjeuner, de 12h à 14h, se sont transformées en opportunités précieuses pour échanger et jouer, facilitant mon intégration au sein de l'équipe.\n\n Ces activités ont non seulement renforcé notre collaboration professionnelle, mais elles ont également permis de voir au-delà du statut de collègue, en créant des relations un peu moins professionnel.\n\n Les mini réunions \"stand up\" ont également joué leur rôle en favorisant la communication et la collaboration.\n Ce stage a réussi à équilibrer le plaisir et le travail, offrant une expérience enrichissante et inoubliable qui a marqué mon parcours professionnel."
         },
         "NomDuPost2": {
             "id": "2",
-            "image": "image.jpg",
+            "image": "/portfolio/imageBlog/tableau_reunion.jpg",
             "titre": "Titre du post2",
-            "contenu": "Contenu du post2"
+            "contenu": "Pour réaliser un stage dans les règles de l'art, il faut un projet, de quoi travailler pour ne pas s'ennuyer.\n Une collègue, Diane, également formatrice, a eu l'idée d'un projet, une application permettant de remplacer ce qu'elle faisait avant au format papier. Cette application est un outil de révision et d'apprentissage ; on y trouve un jeu à la \"Time's Up\", dans lequel les étudiants vont devoir décrire, chacun leur tour, un mot qu'il leur aura été donné ; les autres devront trouver le plus rapidement possible le mot décrit. Une fois le jeu fini, les étudiants auront accès à la liste de mots pour pouvoir continuer à réviser.\n \nJ'ai donc eu une réunion avec la \"cliente\", ici Diane, pour faire une simulation de vrai projet. À la suite de ce rendez-vous, j'ai rédigé un brief permettant de résumer les besoins et les attentes de la cliente, mais aussi de mettre en place l'ordre des priorités parmi les fonctionnalités pour prévoir le contenu des différentes versions."
         },
         "NomDuPost3": {
             "id": "3",
@@ -33,24 +33,6 @@
         },
         "NomDuPost6": {
             "id": "6",
-            "image": "image.jpg",
-            "titre": "Titre du post",
-            "contenu": "Contenu du post"
-        },
-        "NomDuPost7": {
-            "id": "7",
-            "image": "image.jpg",
-            "titre": "Titre du post",
-            "contenu": "Contenu du post"
-        },
-        "NomDuPost8": {
-            "id": "8",
-            "image": "image.jpg",
-            "titre": "Titre du post",
-            "contenu": "Contenu du post"
-        },
-        "NomDuPost9": {
-            "id": "9",
             "image": "image.jpg",
             "titre": "Titre du post",
             "contenu": "Contenu du post"
