@@ -11,8 +11,10 @@
         </span>
         <span class="descriptionProjet">
             <p>{{ projet.description }}</p>
+            <p class="techno">Technologies utiliser :</p>
             <ul>
                 <li v-for="(langage, key) in projet.langage" :key="key">
+                    
                     <svg-icon class="icon" type="mdi" :path="getIcon(langage.icone)"></svg-icon>
                 </li>
             </ul>
@@ -79,43 +81,45 @@ export default {
     margin: 2rem 0;
     padding: 0 2rem;
     width: 80%;
-    height: 35vw;
+    height: auto;
     gap: 10vw;
+    white-space: pre-line;
+    text-align: justify;
 
     @include respond(desktop) {
         width: 90%;
-        height: 40vw;
+        // height: 40vw;
     }
 
     @include respond(desktop-1550) {
         width: 100%;
-        height: 45vw;
+        // height: 45vw;
     }
 
     @include respond(desktop-1350) {
-        height: 55vw;
+        // height: 55vw;
     }
 
     @include respond(tab-land) {
         flex-direction: column;
         gap: 5vw;
-        height: 135vh;
+        // height: 135vh;
     }
 
     @include respond(tab-port) {
-        height: 150vh;
+        // height: 150vh;
     }
 
     @include respond(tab-800) {
-        height: 160vh;
+        // height: 160vh;
     }
 
     @include respond(phone-big) {
-        height: 170vh;
+        // height: 170vh;
     }
 
     @include respond(phone-500) {
-        height: 180vh;
+        // height: 180vh;
         justify-content: space-around;
     }
 }
@@ -136,6 +140,7 @@ export default {
     width: 50%;
     height: 100%;
     padding: 2vw;
+    gap: 10vw;
 
     @include respond(desktop-1350) {
         height: 75%;
@@ -297,7 +302,7 @@ export default {
     transition: all 0.3s ease-in-out;
 }
 
-.descriptionProjet p {
+.descriptionProjet p:nth-child(1) {
     font-size: 1rem;
     font-weight: 600;
     color: var(--var-color1);
@@ -310,6 +315,23 @@ export default {
 
     @include respond(phone-330) {
         font-size: 0.9rem;
+    }
+}
+
+.techno {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--var-color1);
+    text-align: center;
+    font-family: "Poppins", cursive;
+    margin-top: 1rem;
+
+    @include respond(desktop) {
+        font-size: 1.7rem;
+    }
+
+    @include respond(phone-330) {
+        font-size: 1.3rem;
     }
 }
 
