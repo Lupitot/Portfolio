@@ -159,6 +159,7 @@ export default {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: all 1s ease-in-out;
+    gap: 1rem;
 
     @include respond(tab-land) {
         width: 50vw;
@@ -215,7 +216,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 4rem;
     padding: 1rem;
     width: 90%;
     height: 50%;
@@ -238,7 +239,7 @@ export default {
     font-weight: 800;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 2;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre-line;
