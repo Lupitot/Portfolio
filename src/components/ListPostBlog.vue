@@ -171,6 +171,16 @@ export default {
     transition: all 1s ease-in-out;
     gap: 1rem;
 
+    @include respond(desktop-1550){
+        width: 30vw;
+        height: 35vw;
+    }
+
+    @include respond(desktop-1350){
+        width: 35vw;
+        height: 40vw;
+    }
+
     @include respond(tab-land) {
         width: 50vw;
         height: 60vw;
@@ -245,6 +255,7 @@ export default {
 
 .contentTextPost p {
     width: 100%;
+    height: auto;
     font-size: 1rem;
     font-weight: 800;
     display: -webkit-box;
@@ -256,6 +267,7 @@ export default {
     text-align: justify;
     color: var(--var-color1);
     font-family: "Poppins", cursive;
+
 
 }
 
@@ -276,6 +288,18 @@ export default {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 4px 4px 0px 0px #185ADB;
+
+    @include respond(desktop-1550){
+        width: 8vw;
+        height: 2.5vw;
+        font-size: 1.2vw;
+    }
+
+    @include respond(desktop-1350){
+        width: 9vw;
+        height: 3vw;
+        font-size: 1.4vw;
+    }
 
     @include respond(tab-land) {
         width: 10vw;

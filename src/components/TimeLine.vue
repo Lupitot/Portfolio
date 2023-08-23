@@ -2,19 +2,19 @@
     <div class="contentTimeline">
         <ul class="timeline">
             <li>
-                <h4>2023 2024 :</h4>
+                <h4>2023 - 2024 :</h4>
                 <p>Année de Bachelor 3 en spécialité développement à Nantes Ynov Campus. La suite est à venir.</p>
             </li>
             <li>
-                <h4>2022 2023 :</h4>
+                <h4>2022 - 2023 :</h4>
                 <p>Année de Bachelor 2 à Nantes Ynov Campus. Stage chez Oniti en développement. Poursuite de l'emploi étudiant chez KFC. Début du projet Abyssal Dungeon.</p>
             </li>
             <li>
-                <h4>2021 2022 :</h4>
+                <h4>2021 - 2022 :</h4>
                 <p>Première année de Bachelor à Nantes Ynov Campus. Découverte approfondie du monde du développement. Début de mon emploi étudiant chez KFC. Stage à l'université de François Rabelais à l'antenne de Blois en développement et en bases de données.</p>
             </li>
             <li>
-                <h4>2020 2021 :</h4>
+                <h4>2020 - 2021 :</h4>
                 <p>Obtention de mon Bac STI2D option SIN (Systèmes d'Information et Numérique) avec mention bien. Emploi dans la station Esso de Blois-Menard . Installation à Nantes.</p>
             </li>
         </ul>
@@ -83,8 +83,10 @@
     border-radius: 0px 5vw;
     color: var(--var-color4);
     width: 25vw;
-    height: 17vw;
-    padding: 20px 40px;
+    min-height: 13vw;
+    height: auto;
+    gap: 2vw;
+    padding: 25px 45px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -95,20 +97,17 @@
 
     @include respond(tab-land) {
         width: 30vw;
-        height: 20vw;
     }
 
 
     @include respond(tab-port) {
         width: 40vw;
-        height: 25vw;
         transform: translateX(0%);
         border-radius: 5vw 5vw;
     }
     
     @include respond(tab-700){
         width: 40vw;
-        height: 30vw;
         transform: translateX(0%);
         border-radius: 5vw 5vw;
 
@@ -116,7 +115,6 @@
 
     @include respond(phone-big) {
         width: 80vw;
-        height: auto;
         padding: 5vw;
         gap: 5vw;
         text-align: center;
@@ -125,7 +123,7 @@
     }
 
     @include respond(phone) {
-        height: 130vw;
+        height: auto;
 
     }
 
