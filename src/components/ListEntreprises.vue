@@ -48,7 +48,6 @@ export default {
     background-color: var(--var-color3);
     padding-bottom: 2rem;
 
-
     // @include respond(phone-500) {
     //     height: 100vh;
     // }
@@ -80,17 +79,13 @@ export default {
     align-items: center;
     justify-content: space-around;
 
+
     @include respond(tab-1000) {
-        // transform: translateY(-20%);
         flex-direction: column;
         justify-content: space-between;
     }
 
-    @include respond(phone-500) {
-        // transform: translateY(-20%);
-    }
 }
-
 
 .containerEntreprises:nth-child(odd) .entrepriseInfo {
     flex-direction: row-reverse;

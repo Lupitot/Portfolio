@@ -11,27 +11,27 @@
             "pathd": "M0,64L48,58.7C96,53,192,43,288,37.3C384,32,480,32,576,48C672,64,768,96,864,106.7C960,117,1056,107,1152,90.7C1248,75,1344,53,1392,42.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
         },
         "entreprises2" : {
-            "nom" : "entreprise2",
-            "logo" : "test",
+            "nom" : "Université François Rabelais",
+            "logo" : "/portfolio/logoEntreprises/logoUniversité.png",
             "altLogo" : "université françois rabelais",
-            "description" : "description2",
-            "lien" : "lien2",
+            "description" : "Lors de ma première année, j'ai décidé d'entreprendre un stage pendant la période estivale. J'ai eu l'opportunité d'être sélectionné pour rejoindre une université, où j'ai travaillé en collaboration avec des chercheurs ainsi qu'un doctorant en train de rédiger sa thèse.\n\nLe projet sur lequel ils travaillaient était une combinaison d'intelligence artificielle et de bases de données. À mon niveau de compétence à l'époque, j'ai principalement œuvré dans l'optimisation de bases de données, en approfondissant mes connaissances dans le SQL.\n\nL'équipe était composée de deux chercheurs, qui étaient également enseignants, d'un doctorant et de deux autres stagiaires.\n\nCe stage a représenté pour moi une occasion unique de découvrir le mode de travail des chercheurs, et surtout d'apprendre aux côtés de ces professionnels.",
+            "lien" : "https://www.univ-tours.fr/",
             "pathd" : "M0,32L48,58.7C96,85,192,139,288,149.3C384,160,480,128,576,106.7C672,85,768,75,864,101.3C960,128,1056,192,1152,197.3C1248,203,1344,149,1392,122.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
         },
         "entreprises3" : {
-            "nom" : "entreprise3",
-            "logo" : "logo3",
+            "nom" : "Nantes Ynov Campus",
+            "logo" : "/portfolio/logoEntreprises/logo_ynov_campus_nantes.png",
             "altLogo" : "nantes Ynov Campus",
-            "description" : "description3",
-            "lien" : "lien3",
+            "description" : "L'école dans laquelle je suis inscrit depuis septembre 2021 est Nantes Ynov Campus. Cette école adopte largement une approche basée sur les projets, dans le but de nous familiariser avec les méthodes de travail en entreprise. À mon avis, cette méthode s'avère très efficace. J'ai acquis de nombreuses compétences au cours des deux dernières années et j'espère que cette dynamique se poursuivra.\n\nBien que l'école ne soit pas exempte de défauts, je suis globalement satisfait de mon choix. En effet, il y a toujours des projets stimulants et des opportunités pour se surpasser et progresser. Les projets \"Ydays\" en sont un exemple, car ils nous offrent une première immersion dans le monde professionnel. De plus, les stages et les possibilités d'alternance constituent des occasions précieuses.\n\nÀ l'horizon de trois ans, j'aspire à décrocher mon master en développement au sein de cette école et ainsi mettre en application les compétences que j'aurai acquises au service d'une entreprise.",
+            "lien" : "https://www.ynov.com/campus/nantes/c'",
             "pathd" : "M0,160L48,170.7C96,181,192,203,288,186.7C384,171,480,117,576,85.3C672,53,768,43,864,58.7C960,75,1056,117,1152,133.3C1248,149,1344,139,1392,133.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
         },
         "entreprises4" : {
-            "nom" : "entreprise4",
-            "logo" : "logo4",
-            "altLogo" : "kfc",
-            "description" : "description4",
-            "lien" : "lien4",
+            "nom" : "KFC",
+            "logo" : "/portfolio/logoEntreprises/logoKFC.png",
+            "altLogo" : "Logo de Kfc",
+            "description" : "Depuis mon arrivée à Nantes pour mes études, je travaille chez KFC afin de pouvoir couvrir mes frais de loyer et autres dépenses du quotidien chaque mois. Ce travail, en plus de m'apporter un revenu, m'a offert de nombreux avantages, notamment en ce qui concerne les compétences relationnelles. En effet, j'ai eu l'occasion de communiquer avec les clients, ce qui a développé ma patience, et j'ai également appris à mieux travailler en équipe en répartissant les tâches de manière efficace pour assurer une progression coordonnée. De par mon ancienneté, il m'arrive parfois de prendre des responsabilités lorsque le manager doit s'absenter. Tous ces aspects sont, à mon avis, des compétences relationnelles essentielles dans le domaine du développement.\n\nCe travail, en parallèle de mes études, m'a permis de devenir la meilleure version de moi-même en ce qui concerne le travail d'équipe et même la gestion de petits groupes. Bien que je n'envisage pas de faire carrière dans l'emballage de poulet, j'en retire beaucoup de bénéfices et je suis reconnaissant pour les moments que KFC m'a apportés. Je les remercie de m'avoir donné l'opportunité de travailler au sein de leur restaurant.",
+            "lien" : "https://www.kfc.fr/programme-fidelite-colonel-club?gclid=Cj0KCQjw3JanBhCPARIsAJpXTx7--F3otXiwmmGAB5YM9KcdlOrsGt9lwm1PSX71gKiaZH4OIBHs-H4aAkChEALw_wcB&gclsrc=aw.ds",
             "pathd": "M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,165.3C672,160,768,96,864,101.3C960,107,1056,181,1152,186.7C1248,192,1344,128,1392,96L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
         }
     }

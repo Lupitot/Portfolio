@@ -121,6 +121,7 @@ export default {
     gap: 5vw;
     width: 100%;
     padding: 5vw 5vw 0 5vw;
+    animation: containerApparition 1s ease-in;
 
 
 
@@ -139,6 +140,15 @@ export default {
         height: 77vh;
     }
 
+}
+
+@keyframes containerApparition{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
 
 .cardScrollContainer::-webkit-scrollbar {
