@@ -11,7 +11,7 @@
         </span>
         <span class="descriptionProjet">
             <p>{{ projet.description }}</p>
-            <p class="techno">Technologies utiliser :</p>
+            <p class="techno">Technologies utilisées :</p>
             <ul>
                 <li v-for="(langage, key) in projet.langage" :key="key">
                     
@@ -26,7 +26,7 @@
 <script>
 import JsonProjet from "../database/projet.json";
 import SvgIcon from '@jamescoyle/vue-icon';
-import { mdiGithub, mdiLanguageHtml5, mdiLanguageCss3, mdiLanguagePhp, mdiLanguageCsharp, mdiLanguageJavascript, mdiUnity } from '@mdi/js';
+import { mdiGithub, mdiLanguageHtml5, mdiLanguageCss3, mdiLanguagePhp, mdiLanguageCsharp, mdiLanguageJavascript, mdiUnity, mdiVuejs } from '@mdi/js';
 
 export default {
     name: "projetIcon",
@@ -42,7 +42,8 @@ export default {
             Php: mdiLanguagePhp,
             Csharp: mdiLanguageCsharp,
             Javascript: mdiLanguageJavascript,
-            Unity: mdiUnity
+            Unity: mdiUnity,
+            Vuejs: mdiVuejs,
         };
     },
     methods: {
@@ -60,6 +61,8 @@ export default {
                     return this.Javascript;
                 case "Unity":
                     return this.Unity;
+                case "Vuejs":
+                    return this.Vuejs;
                 default:
                     return '';
             }

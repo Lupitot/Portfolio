@@ -4,7 +4,7 @@
             "nom" : "Abyssal Dungeon",
             "description" : "Dans mon école, Nantes Ynov Campus, nous avons ce que l'on appelle les \"Ydays\". Il s'agit d'un projet d'une durée d'un an, voire plus si le projet est reconduit les années suivantes. Ce programme est multi-filiaire et vise à offrir une première expérience du monde de l'entreprise en nous faisant gérer des projets comme de véritables entreprises.\n\nJ'ai donc décidé de soumettre mon propre projet. Celui-ci se nomme \"Abyssal Dungeon\", un jeu vidéo de type RPG/Rogue-Like. Dans ce jeu, le joueur explore un donjon où l'objectif est de le vaincre et de réussir à s'échapper, sans savoir encore que cette tâche est en réalité impossible. Le jeu comporte un système de score qui prend en compte les différentes mécaniques de jeu. Étant donné que le donjon est infini et que tous les étages et les salles sont générés aléatoirement, il offre une expérience toujours renouvelée pour tenter d'améliorer son score. De plus, nous mettons l'accent sur la personnalisation : les joueurs ont la possibilité de définir les statistiques de leur personnage, ce qui signifie qu'ils pourraient créer un mage tank (bien que l'efficacité de cette combinaison ne soit pas garantie, elle reste possible).\n\nNous avons également prévu de proposer différents environnements visuels afin d'éviter toute monotonie. Chaque ensemble d'étages, composé de cinq niveaux, possède un boss à vaincre. De plus, chaque environnement est accompagné d'une bande sonore distincte. En somme, nous avons de nombreuses autres idées que nous mettrons progressivement en place. Notre objectif final est de rendre ce jeu disponible sur Steam, en proposant des mises à jour fréquentes pour renouveler le gameplay et approfondir progressivement l'univers narratif du jeu.\n\nJ'ai donc dirigé ce projet pendant une année avec une équipe composée de 12 membres, en plus de moi, soit une équipe de 13 personnes. Le projet se poursuit pour une nouvelle année avec quelques changements au sein de l'équipe. Fort de l'expérience acquise lors de la première année et de mon stage au cours duquel j'ai découvert une organisation professionnelle, je suis convaincu que le projet ne peut que s'améliorer ! ",
             "image" : "/portfolio/imageProjets/AD_logo_blanc.png",
-            "altImage" : "altImage1",
+            "altImage" : "logo Abyssal Dungeon",
             "langage" : {
                 "langage1" : {
                     "icone" : "Unity"
@@ -15,11 +15,11 @@
             }
         },
         "projet2" : {
-            "nom" : "Projet2",
-            "description" : "description2",
-            "image" : "image2",
-            "altImage" : "altImage2",
-            "lienGithub" : "lienGithub2",
+            "nom" : "PokéHide",
+            "description" : "En fin de 2ème année dans mon école, nous devions réaliser un projet de développement par groupe de deux. Avec mon collègue, nous avons décidé de créer une application basée sur une API de la célèbre licence Pokémon. Le but était de concevoir un jeu inspiré de \"Qui est ce Pokémon ?\", où il faut deviner le nom du Pokémon présenté. Ce jeu était présent dans l'animé pendant les coupures publicitaires et reste un bon souvenir pour les fans de la licence. Les parties de ce jeu se jouent en multijoueur, soit dans des parties privées avec un code, soit dans des parties publiques où l'on peut rejoindre en cliquant simplement sur \"Rejoindre la salle\". En plus de ce jeu, nous avons mis en place un système de collection : à chaque partie, les 4 premiers gagnent un Pokémon aléatoire pour compléter leur Pokédex, et les informations sur les Pokémon gagnés sont ensuite consultables. Un chat est également disponible pour passer le temps en attendant les membres de la salle et pendant le jeu.\n\nCe projet était un défi pour nous, car nous n'avions jamais dû déployer une application sur des serveurs avec Unity. De plus, ce jeu était particulièrement plaisant à développer en raison de son aspect ludique. Malgré l'aspect esthétique qui n'était pas primordial étant donné que ce n'était pas l'objectif principal du projet et que nous n'avions pas le temps de nous préoccuper de détails secondaires, nous sommes satisfaits du résultat, car le jeu est vraiment divertissant et tout fonctionne très bien. Ce fut une excellente expérience en C# avec Unity.",
+            "image" : "/portfolio/imageProjets/Pokehide.png",
+            "altImage" : "image pokéhide",
+            "lienGithub" : "https://github.com/MaxChevalier/Pok-Hide",
             "langage" : {
                 "langage1" : {
                     "icone" : "Unity"
@@ -30,27 +30,39 @@
             }
         },
         "projet3" : {
-            "nom" : "Projet3",
-            "description" : "description3",
-            "image" : "image3",
-            "altImage" : "altImage3",
-            "lienGithub" : "lienGithub3",
+            "nom" : "Portfolio",
+            "description" : "Le portfolio est un outil indispensable, d'autant plus pour les développeurs qui peuvent démontrer leurs compétences en créant leur propre site. Pour ma part, j'ai réalisé mon portfolio en tant que rendu de stage et j'ai eu la chance de pouvoir le développer pendant cette période. J'ai choisi d'utiliser Vue.js, un framework que je ne connaissais pas encore. Ce fut l'occasion d'enrichir mes compétences. J'ai grandement apprécié travailler avec Vue.js, notamment en tant que premier framework, car l'expérience a été très agréable.\n\nPour la création de mon site, j'ai commencé par concevoir une maquette afin de mettre en ordre mes idées, puis j'ai pu me lancer dans la programmation. L'avantage de concevoir son propre site est que l'on a la liberté de réaliser les animations et de choisir les couleurs que l'on souhaite, sans être contraint par les exigences d'un client potentiel. J'ai ainsi pu m'amuser à créer des animations et des effets dans ce framework que je découvrais.\n\nDans mon portfolio, j'ai également dû réaliser un blog comme rendu de stage. J'ai ainsi réfléchi à des articles pour alimenter cette page, qui s'est avérée être particulièrement intéressante à coder./n/nJ'espère que ce portfolio permettra aux recruteurs d'avoir une meilleure idée de mes compétences en développement, ainsi que de mes compétences humaines. J'espère également que vous prendrez autant de plaisir à découvrir mon portfolio que j'en ai eu à le réaliser !",
+            "image" : "/portfolio/imageBlog/image_portfolio.png",
+            "altImage" : "Image portfolio",
+            "lienGithub" : "https://github.com/Lupitot/portfolio",
             "langage" : {
-                "langage1" : "langage1",
-                "langage2" : "langage2",
-                "langage3" : "langage3"
+                "langage1" : {
+                    "icone" : "Html"
+                },
+                "langage2" : {
+                    "icone" : "Css"
+                },
+                "langage3" : {
+                    "icone" : "Javascript"
+                },
+                "langage4" : {
+                    "icone" : "Vuejs"
+                }
             }
         },
         "projet4" : {
-            "nom" : "Projet4",
-            "description" : "description4",
+            "nom" : "Intranet",
+            "description" : "Un autre projet que j'ai dû réaliser en fin de 2ème année était un projet plus orienté infrastructure, réalisé en binôme. Nous avons décidé de créer un intranet afin de conserver une partie du développement que nous préférions. Nous avons commencé par nous renseigner sur le matériel à notre disposition, notamment les Raspberry Pi. L'objectif était de sécuriser le site hébergé sur la Raspberry Pi, permettant ainsi à une entreprise de l'utiliser comme intranet. Plusieurs fonctionnalités étaient prévues, telles qu'un agenda, une liste de contacts avec les adresses e-mail de l'entreprise, ainsi qu'un outil de prise de notes. Le site a été développé en PHP pour faciliter l'utilisation des bases de données.\n\nPour ce faire, nous avons installé un serveur Apache sur notre machine Linux de la Raspberry Pi. Une fois la Raspberry Pi correctement configurée, nous avons pu y mettre en place le site pour effectuer les tests. Malgré quelques difficultés, nous avons réussi à déployer notre site sur cet environnement. Le lien GitHub disponible ne contient que le site en PHP, car nous n'avons plus accès à la Raspberry Pi.\n\nCe projet représentait pour moi une opportunité de créer un nouveau site web en utilisant PHP avec des bases de données. Malgré ma préférence pour le développement, j'ai apprécié ce projet, principalement en raison de la présence d'un site sur lequel j'ai consacré un certain temps pour mettre en place les différentes fonctionnalités.",
             "image" : "image4",
-            "altImage" : "altImage4",
-            "lienGithub" : "lienGithub4",
+            "altImage" : "Image site intranet",
+            "lienGithub" : "https://github.com/Lupitot/Intranet/tree/dev",
             "langage" : {
-                "langage1" : "langage1",
-                "langage2" : "langage2",
-                "langage3" : "langage3"
+                "langage1" : {
+                    "icone" : "Php"
+                },
+                "langage2" : {
+                    "icone" : "Css"
+                }
             }
         }
     }
