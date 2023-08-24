@@ -138,7 +138,7 @@ export default {
 
     @include respond(tab-700) {
         transform: translateY(0%);
-        height: 65vh;
+        height: 70vh;
     }
 
 }

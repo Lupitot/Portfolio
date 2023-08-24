@@ -36,7 +36,7 @@ import ListPostBlog from "./components/ListPostBlog.vue";
     width: 100%;
     height: 90vh;
     @include respond(tab-land){
-        justify-content: space-between;
+        // justify-content: space-between;
         // height: auto;
     }
 }
