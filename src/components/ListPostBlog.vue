@@ -67,15 +67,16 @@ export default {
                 }
                 event.target.textContent = event.target.textContent.replace("Voir plus", "Voir moins");
                 event.target.parentNode.parentNode.classList.toggle("cardBlogSize");
-
-                setTimeout(() => {
-                    var card = this.$refs.cardContainer.querySelector(".cardBlogSize");
-                    card.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'center',
-                        inline: 'center'
-                    });
-                }, 900);
+                if (window.innerWidth > 1200) {
+                    setTimeout(() => {
+                        var card = this.$refs.cardContainer.querySelector(".cardBlogSize");
+                        card.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'center',
+                            inline: 'center'
+                        });
+                    }, 900);
+                }
             } else if (document.querySelector(".cardBlogSize")) {
                 if (window.innerWidth > 1200) {
                     document.querySelector(".contentBlog").style = "height: 90vh;";
@@ -92,14 +93,16 @@ export default {
                     event.target.textContent = event.target.textContent.replace("Voir plus", "Voir moins");
                     document.querySelector(".cardBlogSize").classList.toggle("cardBlogSize");
                     event.target.parentNode.parentNode.classList.toggle("cardBlogSize");
-                    setTimeout(() => {
-                        var card = this.$refs.cardContainer.querySelector(".cardBlogSize");
-                        card.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'center',
-                            inline: 'center'
-                        });
-                    }, 900);
+                    if (window.innerWidth > 1200) {
+                        setTimeout(() => {
+                            var card = this.$refs.cardContainer.querySelector(".cardBlogSize");
+                            card.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'center',
+                                inline: 'center'
+                            });
+                        }, 900);
+                    }
                 }
             }
         },
