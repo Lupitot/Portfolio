@@ -2,7 +2,9 @@
   <FollowMouse></FollowMouse>
   <BurgerMenu></BurgerMenu>
   <section class="presentation">
+    
     <span class="PresentationContent">
+      <welcome></welcome>
       <GlowCirclePicture class="glowCircle"></GlowCirclePicture>
       <span class="TextContent">
         <h3 class="PresentationTitle">Paul Piauger</h3>
@@ -44,6 +46,7 @@ import TimeLine from "./components/TimeLine.vue";
 import SkillsSelector from "./components/SkillsSelector.vue";
 import FollowMouse from "./components/FollowMouse.vue";
 import Footer from "./components/Footer.vue";
+import welcome from "./components/welcome.vue";
 
 
 </script>
@@ -121,7 +124,9 @@ import Footer from "./components/Footer.vue";
   font-size: 5vw;
   color: var(--var-color4);
   font-family: "Lilita One", cursive;
-  animation: apparitionTitle 1s ease-in-out; 
+  opacity: 0;
+  animation: apparitionTitle 1s ease-in-out forwards; 
+  animation-delay: 3.6s;
 
   
   @include respond(tab-700) {
@@ -150,7 +155,9 @@ import Footer from "./components/Footer.vue";
   width: 75%;
   text-align: justify;
   text-justify: inter-word;
-  animation: apparitionText 1s ease-in-out;
+  opacity: 0;
+  animation: apparitionText 1s ease-in-out forwards;
+  animation-delay: 3.6s;
 
 
   @include respond(tab-700) {
@@ -198,7 +205,9 @@ import Footer from "./components/Footer.vue";
 
 
 .glowCircle {
-  animation: apparitionPicture 1s ease-in-out;
+  opacity: 0;
+  animation: apparitionPicture 1s ease-in-out forwards;
+  animation-delay: 3.6s;
 
 
   @include respond(tab-700) {
