@@ -207,18 +207,8 @@ export default {
     }
 
     @include respond(phone-500) {
-        width: 80vw;
-        height: 130vw;
-    }
-
-    @include respond(phone-moyen) {
-        width: 80vw;
-        height: 170vw;
-    }
-
-    @include respond(phone) {
-        width: 80vw;
-        height: 215vw;
+        width: auto;
+        height: auto;
     }
 
 }
