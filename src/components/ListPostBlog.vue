@@ -129,6 +129,7 @@ export default {
 
 
     @include respond(tab-land) {
+        animation: none;
         flex-direction: column;
         align-items: center;
         height: 70vh;
@@ -369,12 +370,7 @@ export default {
     transition: all 1s ease-in-out;
 
     @include respond(tab-land) {
-        // width: 80vw;
         height: auto;
-    }
-
-    @include respond(tab-700) {
-        // width: 90vw;
     }
 
 }
@@ -384,7 +380,6 @@ export default {
     overflow: visible;
     -webkit-line-clamp: unset;
     height: auto;
-    // overflow-y: auto;
 
 }
 
