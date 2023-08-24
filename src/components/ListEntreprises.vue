@@ -47,14 +47,6 @@ export default {
     height: auto;
     background-color: var(--var-color3);
     padding-bottom: 2rem;
-
-    // @include respond(phone-500) {
-    //     height: 100vh;
-    // }
-
-    // @include respond(phone-moyen) {
-    //     height: 120vh;
-    // }
 }
 
 
@@ -170,8 +162,9 @@ export default {
     }
 
     @include respond(tab-700) {
-        width: 80%;
+        width: 90%;
         font-size: 2.5vw;
+        padding: 2rem;
     }
 
     @include respond(phone-500) {
@@ -180,7 +173,8 @@ export default {
     }
 
     @include respond(phone-moyen) {
-        // font-size: 5.5vw;
+        width: 95%;
+        padding: 1.5rem;
     }
 }
 // saut de ligne au \n
