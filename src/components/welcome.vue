@@ -1,5 +1,5 @@
 <template>
-    <h1>Bienvenue</h1>
+    <h1 class="bienvenue">Bienvenue</h1>
 </template>
 
 <script setup></script>
@@ -7,7 +7,7 @@
 <style lang="scss">
 
     @import "../assets/responsive.scss";
-    h1 {
+    .bienvenue {
     
         color: var(--var-color4);
         font-size: 15vw;
