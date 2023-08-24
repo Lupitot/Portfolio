@@ -5,9 +5,9 @@
                 <p>Mail</p>
             </a>
         </div>
-        <div class="Linkdin boxContact">
+        <div class="linkedin boxContact">
             <a href="https://www.linkedin.com/in/paul-piauger/">
-                <p>Linkdin</p>
+                <p>linkedin</p>
             </a>
         </div>
         <div class="CodePen boxContact">

@@ -177,7 +177,7 @@ export default {
         padding: 1.5rem;
     }
 }
-// saut de ligne au \n
+
 .descriptionEntreprise p {
     white-space: pre-line;
 
