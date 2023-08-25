@@ -235,6 +235,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
     padding: 1rem;
     width: 90%;
     height: 50%;
