@@ -5,7 +5,7 @@
                 <a href="/portfolio/src/page/contact.html">Contact</a>
             </div>
             <div class="buttonWithLink">
-                <a href="/portfolio/index.html">Home</a>
+                <a href="/portfolio/index.html?noWelcome=true">Home</a>
             </div>
         </span>
         <span class="Droit">
