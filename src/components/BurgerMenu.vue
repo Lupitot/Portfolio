@@ -2,7 +2,7 @@
     <div class="menu" :class="{ active: menuOpen }">
         <section id="content" class="content">
             <ul class="ulmenu">
-                <li><a href="/portfolio/index.html">Home</a></li>
+                <li><a href="/portfolio/index.html?noWelcome=true">Home</a></li>
                 <li><a href="/portfolio/src/page/blog.html">Blog</a></li>
                 <li><a href="/portfolio/src/page/projet.html">Projets</a></li>
                 <li><a href="/portfolio/src/page/entreprises.html">Entreprises</a></li>

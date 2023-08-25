@@ -259,7 +259,6 @@ export default {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre-line;
-    text-align: justify;
     color: var(--var-color1);
     font-family: "Poppins", cursive;
 

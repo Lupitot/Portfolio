@@ -4,11 +4,11 @@
   <section class="presentation">
     
     <span class="PresentationContent">
-      <welcome></welcome>
-      <GlowCirclePicture class="glowCircle"></GlowCirclePicture>
+      <welcome v-if="!noWelcome"></welcome>
+      <GlowCirclePicture class="glowCircle" :class="{'no-welcome': noWelcome}"></GlowCirclePicture>
       <span class="TextContent">
-        <h3 class="PresentationTitle">Paul Piauger</h3>
-        <h4 class="PresentationText">Bienvenue sur mon portfolio ! Je suis Paul, un étudiant en informatique passionné par le développement. Je vous laisse découvrir, à travers mon site, mes réalisations, mes expériences et mon blog. Bonne exploration !
+        <h3 class="PresentationTitle" :class="{'no-welcome': noWelcome}">Paul Piauger</h3>
+        <h4 class="PresentationText" :class="{'no-welcome': noWelcome}">Bienvenue sur mon portfolio ! Je suis Paul, un étudiant en informatique passionné par le développement. Je vous laisse découvrir, à travers mon site, mes réalisations, mes expériences et mon blog. Bonne exploration !
         </h4>
       </span>
     </span>
@@ -47,7 +47,10 @@ import SkillsSelector from "./components/SkillsSelector.vue";
 import FollowMouse from "./components/FollowMouse.vue";
 import Footer from "./components/Footer.vue";
 import welcome from "./components/welcome.vue";
+import { ref } from "vue";
 
+const urlParams = new URLSearchParams(window.location.search);
+const noWelcome = ref(urlParams.has('noWelcome'));
 
 </script>
 
@@ -275,7 +278,9 @@ import welcome from "./components/welcome.vue";
 }
 
 
-
+.no-welcome {
+  animation-delay: 0.2s;
+}
 
 
 /* style partie parcours */

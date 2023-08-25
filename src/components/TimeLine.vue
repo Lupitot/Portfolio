@@ -163,7 +163,6 @@
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     letter-spacing: 0.1vw;
-    text-align: justify;
 
     @include respond(tab-land) {
         font-size: 1.1vw;

@@ -152,7 +152,6 @@ export default {
     font-family: "Poppins", sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
-    text-align: justify;
     padding: 3rem;
     box-shadow: -10px 10px 0px 0 var(--var-color2);
     border-radius: 20px;

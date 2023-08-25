@@ -87,8 +87,6 @@ export default {
     height: auto;
     gap: 10vw;
     white-space: pre-line;
-    text-align: justify;
-
     @include respond(desktop) {
         width: 90%;
         // height: 40vw;
@@ -309,7 +307,6 @@ export default {
     font-size: 1rem;
     font-weight: 600;
     color: var(--var-color1);
-    text-align: justify;
     font-family: "Poppins", cursive;
 
     @include respond(desktop) {
