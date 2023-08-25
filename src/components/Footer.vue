@@ -28,13 +28,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1vw;
+    gap: 0.4vw;
     height: 10vh;
     width: 100%;
     background-color: var(--var-color3);
     color: var(--var-color1);
     font-family: 'Poppins', cursive;
-
 
     @include respond(tab-land){
         height: 13vh;
