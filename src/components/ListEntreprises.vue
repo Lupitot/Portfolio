@@ -34,7 +34,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 @import "../assets/responsive.scss";
 
 
@@ -125,7 +124,7 @@ export default {
     }
 }
 
-.containerEntreprises:nth-child(odd) .frontEntreprise{
+.containerEntreprises:nth-child(odd) .frontEntreprise {
     color: var(--var-color4);
 }
 
@@ -188,6 +187,4 @@ export default {
     background-color: var(--var-color3);
     color: var(--var-color1);
 }
-
-
 </style>
