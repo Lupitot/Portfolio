@@ -126,8 +126,6 @@ export default {
     padding: 5vw 5vw 0 5vw;
     animation: containerApparition 1s ease-in;
 
-
-
     @include respond(tab-land) {
         animation: none;
         flex-direction: column;
@@ -179,6 +177,11 @@ export default {
     @include respond(desktop-1550){
         width: 30vw;
         height: 35vw;
+    }
+
+    @include respond(desktop-1496){
+        width: 35vw;
+        height: 32vw;
     }
 
     @include respond(desktop-1350){

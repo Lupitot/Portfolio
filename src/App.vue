@@ -286,18 +286,13 @@ const noWelcome = ref(urlParams.has('noWelcome'));
 /* style partie parcours */
 
 .Parcours {
-  height: 220vh;
+  height: 230vh;
   width: 100%;
   background-color: var(--var-color3);
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-
-
-  @include respond(tab-land){
-    height: 230vh;
-  }
 
   @include respond(tab-1000){
     height: 190vh;
