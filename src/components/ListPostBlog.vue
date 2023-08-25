@@ -145,11 +145,12 @@ export default {
 
 }
 
-@keyframes containerApparition{
-    0%{
+@keyframes containerApparition {
+    0% {
         transform: translateX(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(0%);
     }
 }
@@ -174,17 +175,17 @@ export default {
     transition: all 1s ease-in-out;
     gap: 1rem;
 
-    @include respond(desktop-1550){
+    @include respond(desktop-1550) {
         width: 30vw;
         height: 35vw;
     }
 
-    @include respond(desktop-1496){
+    @include respond(desktop-1496) {
         width: 35vw;
         height: 32vw;
     }
 
-    @include respond(desktop-1350){
+    @include respond(desktop-1350) {
         width: 35vw;
         height: 40vw;
     }
@@ -286,13 +287,13 @@ export default {
     transition: all 0.3s ease-in-out;
     box-shadow: 4px 4px 0px 0px #185ADB;
 
-    @include respond(desktop-1550){
+    @include respond(desktop-1550) {
         width: 8vw;
         height: 2.5vw;
         font-size: 1.2vw;
     }
 
-    @include respond(desktop-1350){
+    @include respond(desktop-1350) {
         width: 9vw;
         height: 3vw;
         font-size: 1.4vw;
