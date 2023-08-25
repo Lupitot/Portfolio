@@ -35,7 +35,7 @@
         @media only screen and (max-width: 75em) { @content }; // 1200px
     }
     @if $breakpoint == desktop-1350 {
-        @media only screen and (max-width: 84.375em) { @content }; // 1350px
+        @media only screen and (max-width: 84.4em) { @content }; // 1350px
     }
     @if $breakpoint == desktop-1496 {
         @media only screen and (max-width: 93.5em) { @content }; // 1496px

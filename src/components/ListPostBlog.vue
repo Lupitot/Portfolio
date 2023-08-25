@@ -177,17 +177,17 @@ export default {
 
     @include respond(desktop-1550) {
         width: 30vw;
-        height: 35vw;
+        height: 65vh;
     }
 
     @include respond(desktop-1496) {
         width: 35vw;
-        height: 32vw;
+        // height: 32vw;
     }
 
     @include respond(desktop-1350) {
         width: 35vw;
-        height: 40vw;
+        // height: 40vw;
     }
 
     @include respond(tab-land) {
@@ -235,7 +235,6 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 4rem;
     padding: 1rem;
     width: 90%;
     height: 50%;
@@ -244,7 +243,7 @@ export default {
 }
 
 .contentTextPost h2 {
-    height: 10%;
+    height: auto;
     font-size: 2rem;
     font-weight: 500;
     color: var(--var-color1);

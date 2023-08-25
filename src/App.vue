@@ -286,7 +286,7 @@ const noWelcome = ref(urlParams.has('noWelcome'));
 /* style partie parcours */
 
 .Parcours {
-  height: 230vh;
+  height: 120vw;
   width: 100%;
   background-color: var(--var-color3);
   display: flex;
@@ -294,32 +294,28 @@ const noWelcome = ref(urlParams.has('noWelcome'));
   justify-content: space-between;
   flex-direction: column;
 
-  @include respond(tab-1000){
-    height: 190vh;
-  }
 
+  @include respond( desktop-1350 ){
+    height: 140vw;
+  }
   @include respond(tab-port){
-    height: 130vh;
+    height: 110vw;
   }
 
   @include respond(tab-700) {
-    height: 130vh;
+    height: 140vw;
   }
 
   @include respond(phone-big) {
-    height: 235vh;
+    height: 330vw;
   }
 
   @include respond(phone-500) {
-    height: 200vh;
-  }
-
-  @include respond(phone-moyen) {
-    height: 175vh;
+    height: 310vw;
   }
 
   @include respond(phone) {
-    height: 250vh;
+    height: 400vw;
   }
 }
 
@@ -354,7 +350,7 @@ const noWelcome = ref(urlParams.has('noWelcome'));
 /* style partie skills */
 
 .Skills {
-  height: 215vh;
+  height: 110vw;
   width: 100%;
   background-color: var(--var-color1);
   display: flex;
@@ -362,36 +358,12 @@ const noWelcome = ref(urlParams.has('noWelcome'));
   justify-content: center;
   flex-direction: column;
   gap: 5vw;
-
-
-  @include respond(tab-land){
-    height: 180vh;
-  }
-
-  @include respond(tab-port){
-    height: 150vh;
-  }
-
   @include respond(tab-700) {
-    height: 130vh;
+    height: 130vw;
   }
 
   @include respond(phone-big) {
-    height: 200vh;
-  }
-
-  @include respond(phone-500) {
-    height: 175vh;
-  }
-
-  @include respond(phone-moyen) {
-    height: 150vh;
-  }
-
-
-  @include respond(phone) {
-    height: 122vh;
-    gap: 10vw;
+    height: 240vw;
   }
 }
 

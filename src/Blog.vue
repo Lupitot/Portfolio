@@ -15,11 +15,6 @@ import Footer from "./components/Footer.vue";
 import FollowMouse from "./components/FollowMouse.vue";
 import ListPostBlog from "./components/ListPostBlog.vue";
 
-// if (document.querySelector(".cardBlogSize")){
-//     console.log("test");
-//     document.querySelector(".contentBlog").style = "height: 90vh;";
-//     console.log(document.querySelector(".contentBlog").style);
-// }
 
 </script>
   
