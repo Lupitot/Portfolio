@@ -2,7 +2,7 @@
     <div class="ProjetContainer" v-for="(projet, key) in JsonProjet" :key="key">
         <span class="faceProjet">
             <h3>{{ projet.nom }}</h3>
-            <span>
+            <span class="containerImageProjets">
                 <img :src="projet.image" :alt="projet.altImage">
             </span>
             <a :href="projet.lienGithub">
@@ -209,6 +209,10 @@ export default {
     color: var(--var-color4);
     font-family: "Lilita One", cursive;
     text-align: center;
+}
+.containerImageProjets {
+    width: auto;
+    height: auto;
 }
 
 .faceProjet img {
