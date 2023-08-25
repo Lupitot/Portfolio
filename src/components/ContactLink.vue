@@ -27,7 +27,6 @@
 </script>
 
 <style lang="scss">
-
 @import "../assets/responsive.scss";
 
 
@@ -36,11 +35,12 @@
     height: 50%;
     display: flex;
     gap: 1vw;
-    @include respond(tab-port){
+
+    @include respond(tab-port) {
         flex-direction: column;
     }
 
-    @include respond(phone-big){
+    @include respond(phone-big) {
         height: 70%;
         gap: 10vw;
     }
@@ -61,15 +61,15 @@
     border-radius: 10px;
     border: 2px solid var(--var-color3);
     color: var(--var-color4);
-    
-    @include respond(tab-port){
+
+    @include respond(tab-port) {
         width: 100%;
         min-width: 100%;
         max-width: 100%;
         height: 10vh;
     }
 
-    
+
 }
 
 .boxContact:nth-child(1) {
@@ -100,7 +100,7 @@
     font-family: 'Lilita One', cursive;
     transition: ease-in 0.8s;
 
-    @include respond(tab-port){
+    @include respond(tab-port) {
         font-size: 7vw;
         rotate: 0deg;
     }
@@ -135,7 +135,4 @@
         transform: translateY(0%);
     }
 }
-
-
-
 </style>
