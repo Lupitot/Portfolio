@@ -16,7 +16,7 @@
             </a>
         </div>
         <div class="CV boxContact">
-            <a href="/portfolio/download/CV_Paul_Piauger_alternance.pdf" download="CV_Paul_Piauger_alternance.pdf">
+            <a href="/portfolio/download/CV_Paul_Piauger.pdf" download="CV_Paul_Piauger.pdf">
                 <p>Mon  CV</p>
             </a>
         </div>
